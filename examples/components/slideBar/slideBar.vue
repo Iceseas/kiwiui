@@ -1,18 +1,21 @@
 <template>
   <div class="slideBody">
-    <router-link class="slideItem" to="/index/home" >
+    <router-link :class="['slideItem' , activePath=='updateLog'?' slideItemActive':'']" to="/index/updateLog" >
+      更新日志
+    </router-link>
+    <router-link :class="['slideItem' , activePath=='home'?' slideItemActive':'']" to="/index/home" >
       安装
     </router-link>
-    <router-link class="slideItem" to="/index/Button" >
+    <router-link :class="['slideItem' , activePath=='Button'?' slideItemActive':'']" to="/index/Button" >
       Button 按钮
     </router-link>
-    <router-link class="slideItem" to="/index/Link" >
+    <router-link :class="['slideItem' , activePath=='Link'?' slideItemActive':'']" to="/index/Link" >
       Link 连接
     </router-link>
-    <router-link class="slideItem" to="/index/Input" >
+    <router-link :class="['slideItem', activePath=='Input'?' slideItemActive':'']" to="/index/Input" >
       Input 输入框
     </router-link>
-    <router-link class="slideItem" to="/index/Select" >
+    <router-link :class="['slideItem' , activePath=='Select'?' slideItemActive':'']" to="/index/Select" >
       Select 选择框
     </router-link>
   </div>
@@ -20,8 +23,19 @@
 
 <script>
 export default {
-  methods:{
-  }
+  data(){
+    return {
+      activePath: ''
+    }
+  },
+  watch:{
+    "$route.name" : function(){
+      this.activePath = this.$route.name;
+    }
+  },
+  mounted(){
+    this.activePath = this.$route.name;
+  },
 }
 </script>
 
@@ -44,6 +58,9 @@ export default {
 }
 .slideItem:hover{
   transition: 0.5s;
+  color: #9AD14B;
+}
+.slideItemActive{
   color: #9AD14B;
 }
 </style>

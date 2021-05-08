@@ -11,7 +11,7 @@
     </p>
     <p class="title_init title_2">安装</p>
     <p class="title_init ">使用npm</p>
-    <p class="code_block">npm install uikiwi@0.0.1</p>
+    <p class="code_block">npm install uikiwi -S</p>
     <p class="title_init title_2">注册使用</p>
     <p class="title_init">在入口文件main.js中注册使用</p>
     <p class="code_block">import uikiwi from 'uikiwi'<br>
@@ -28,5 +28,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

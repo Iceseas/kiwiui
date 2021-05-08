@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a>
+  <a href="https://www.npmjs.com/package/uikiwi">
     <img src="https://img.shields.io/badge/npm-0.0.4-green">
   </a>
-  <a>
+  <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
   </a>
 </p>
@@ -50,3 +50,12 @@
 + `kiwi-input` input 输入框组件
 + `kiwi-select` select 下拉选择框组件
 
+## 更新日志
+### 0.0.6
+**bug修复：**
++ 修复了引入ui框架模块后报 `TypeError: Cannot read property 'toLowerCase' of undefined` 的错误
+
+**优化：**
++ `kiwi-input` `kiwi-select` 调整样式
++ `kiwi-select` 增加没有选项的处理
++ `kiwi-select` 优化点击事件

@@ -1,6 +1,7 @@
 <template>
   <label 
     id="kiwi-select--id"
+    v-clickoutside="handleCloseOpions"
     :class="[
       'kiwi-select--init',
       focusBorder?'kiwi-select--box_nohver':'kiwi-select--box',
@@ -37,7 +38,10 @@
     showOptions? 'show-options' : 'close-options'
     ]">
       <div class="kiwi-select--content">
-        <div v-for="item in kwOptions" :key="item" class="kiwi-select--item" @click.stop="disabled? '':handleClickItem($event)">{{ item }}</div>
+        <template v-if="kwOptions && kwOptions.length > 0">
+          <div v-for="item in kwOptions" :key="item" class="kiwi-select--item" @click.stop="disabled? '':handleClickItem($event)">{{ item }}</div>
+        </template>
+        <div v-else class="kiwi-select--item">无内容</div>
       </div>
     </div>
   </label>
@@ -45,6 +49,7 @@
 
 <script>
 export default {
+  name: "kiwi-select",
   data(){
     return{
       focusBorder: false,
@@ -88,15 +93,20 @@ export default {
     // 输入框失焦
     handleInputBlur(e){
       if(this.filterable == true) {
-        this.showOptions = false;
+        this.handleCloseOpions();
         this.focusBorder = false;
         this.blurBorder = true;
         this.$emit("inputBlur", e);
       }
     },
+    // 关闭下拉框
+    handleCloseOpions(){
+      this.showOptions = false;
+      this.focusBorder = false;
+    },
     // 点击选择框聚焦
     handleSelectFocus(e){
-      console.log('11')
+      // 处理点击选择框展开再点开选择框关闭
       if (this.showOptions == false) {
         this.showOptions = true;
       } else {
@@ -122,14 +132,15 @@ export default {
 .kiwi-select--init{
   position: relative;
   cursor: pointer;
+  background: #fff;
 }
 /* 下拉框样式 */
 .kiwi-select--options{
   position: absolute;
   left: 0;
   top: 40px;
+  padding: 5px 0;
   width: 190px;
-  height: 0px;
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
@@ -137,12 +148,11 @@ export default {
   overflow: hidden;
 }
 .kiwi-select--content{
-  width: 103%;
-  height: 100%;
+  width: 110%;
+  box-sizing: border-box;
+  max-height: 190px;
   position: relative;
-  left: 1px;
   overflow: auto;
-  padding: 0 5px;
 }
 .kiwi-select--content::after{
   position: absolute;
@@ -157,13 +167,14 @@ export default {
   border-left: 7px solid transparent;
 }
 .show-options{
-  padding: 5px 0;
-  height: 200px;
-  transition: 0.2s;
+  height: auto;
+  max-height: 200px;
+  transition: 0.3s;
 }
 .close-options{
   height: 0px;
   transition: 0.2s;
+  padding: 0;
 }
 /* 各选项的样式 */
 .kiwi-select--item{

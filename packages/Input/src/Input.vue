@@ -44,6 +44,7 @@
 
 <script>
 export default {
+  name: "kiwi-input",
   data(){
     return{
       focusBorder: false,
@@ -143,6 +144,7 @@ export default {
   border-radius: 4px;
   border:1px solid #e4e7ed;
   position: relative;
+  background: #fff;
 }
 /* 内flex盒子 */
 .kiwi-input-inlinebox{

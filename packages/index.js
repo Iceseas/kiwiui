@@ -1,8 +1,14 @@
 import kiwiButton from './Button'
+import kiwiInput from './Input'
+import kiwiLink from './Link'
+import kiwiSelect from './Select'
 
 // 组件列表
 const components = [
-  kiwiButton
+  kiwiButton,
+  kiwiInput,
+  kiwiLink,
+  kiwiSelect
 ]
 
 
