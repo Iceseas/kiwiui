@@ -33,7 +33,7 @@
 > npm install uikiwi@0.0.1 -S
 
 ## Quick Start
-在入口文件mian.js中使用
+在入口文件`mian.js`中使用
 > import uikiwi from 'uikiwi'
 > 
 > import 'uikiwi/lib/uikiwi.css';
