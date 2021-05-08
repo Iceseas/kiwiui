@@ -9,7 +9,7 @@
 
 <p align="center">
   <a>
-    <img src="https://img.shields.io/badge/npm-0.0.1-green">
+    <img src="https://img.shields.io/badge/npm-0.0.4-green">
   </a>
   <a>
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
