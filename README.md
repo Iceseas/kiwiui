@@ -2,8 +2,9 @@
   style="
   line-height: 80px;
   font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #9AD14B;">
-  KIWI
+  🥝KIWI
 </p>
 
 <p align="center">
@@ -15,7 +16,7 @@
   </a>
 </p>
 
-# KIWIUI 前端组件库
+# 🥝KIWIUI 前端组件库
 
 基于`vue2.x` 目前正在仿照element摸索开发中
 

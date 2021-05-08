@@ -1,0 +1,160 @@
+/* home_contain */
+.home_body,
+.head,
+.main,
+.main_left,
+.main_right,
+.logo{
+  box-sizing: border-box;
+}
+.home_body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.head{
+  height: 10%;
+  border: 1px solid #DCDFE6;
+  padding: 0 40px;
+}
+.logo{
+  width: 300px;
+  height: 100%;
+  display: flex;
+}
+.logo > .img{
+  height: 60px;
+  margin: 9px;
+}
+.logo > .text,
+.logo_text{
+  line-height: 80px;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #9AD14B;
+}
+.main{
+  height: 90%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.main_left{
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid #DCDFE6;
+  overflow-y: auto;
+}
+.main_right{
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+  min-width: 800px;
+  padding-bottom: 50px;
+}
+.router_view{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* main_page_init */
+.main_page_init{
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* explain css */
+.title_init{
+  font-size: 12px;
+  color: 1e2022;
+  font-weight: 600;
+  margin: 15px 0;
+}
+/* 一级标题 */
+.title_1{
+  font-size: 38px;
+}
+/* 二级标题 */
+.title_2{
+  font-size: 30px;
+}
+/* 三级标题 */
+.title_3{
+  font-size: 22px;
+}
+/* 四级标题 */
+.title_4{
+  font-size: 14px;
+}
+/* 代码块 */
+.code_block{
+  height: auto;
+  width: auto;
+  min-width: 200px;
+  background: #bfdcae;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* 列表样式 */
+.list_style{
+  padding-left: 30px;
+  display: block;
+  position: relative;
+  font-size: 12px;
+}
+.list_style::before{
+  position: absolute;
+  content: '';
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background: #303952;
+  border-radius: 100%;
+}
+/* 展示块 */
+.component_show_block{
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #EBEEF5;
+  height: auto ;
+  width: 89%;
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.component_show_block:hover{
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.1s;
+}
+/* 标亮块 */
+.highlight_code{
+  display: inline-block;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 0 3px;
+  background: #bfdcae;
+  color: #fff;
+  font-weight: 600;
+}
+/* 展示组件属性的table样式 */
+.attributes_table{
+  width: 89%;
+  font-size: 12px;
+}
+.attributes_table tr{
+  width: 100%;
+  display: block;
+  padding: 10px 5px;
+  border-bottom: 1px solid #EBEEF5;
+  display: flex;
+}
+.attributes_table td{
+  flex: 1;
+  text-align: center;
+}
