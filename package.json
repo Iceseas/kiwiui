@@ -57,7 +57,7 @@
   "main": "lib/uikiwi.common.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Iceseas/iceUI.git"
+    "url": "git+https://github.com/Iceseas/kiwiui.git"
   },
   "keywords": [
     "vue",
@@ -66,9 +66,9 @@
   "author": "iceseasyh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Iceseas/iceUI/issues"
+    "url": "https://github.com/Iceseas/kiwiui/issues"
   },
-  "homepage": "https://github.com/Iceseas/iceUI#readme",
+  "homepage": "https://github.com/Iceseas/kiwiui#readme",
   "directories": {
     "lib": "lib"
   }
