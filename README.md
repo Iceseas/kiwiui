@@ -33,7 +33,7 @@
 ## Install
 **npm**
 
-> npm install uikiwi@0.0.1 -S
+> npm install uikiwi -S
 
 ## Quick Start
 在入口文件`mian.js`中使用
