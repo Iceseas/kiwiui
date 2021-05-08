@@ -40,5 +40,9 @@
 > 
 > Vue.use(uikiwi)
 
-
+## Elements
++ `kiwi-button` Button 按钮组件
++ `kiwi-link` link 链接组件
++ `kiwi-input` input 输入框组件
++ `kiwi-select` select 下拉选择框组件
 
