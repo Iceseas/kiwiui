@@ -2,7 +2,6 @@
   style="
   line-height: 80px;
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #9AD14B;">
   KIWI
 </p>
