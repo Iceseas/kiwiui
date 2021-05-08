@@ -51,9 +51,10 @@
 + `kiwi-select` select 下拉选择框组件
 
 ## 更新日志
-### 0.0.6
+### 0.0.8
 **bug修复：**
 + 修复了引入ui框架模块后报 `TypeError: Cannot read property 'toLowerCase' of undefined` 的错误
++ 修复自定义指令失效的问题
 
 **优化：**
 + `kiwi-input` `kiwi-select` 调整样式

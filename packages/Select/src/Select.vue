@@ -48,8 +48,10 @@
 </template>
 
 <script>
+import clickoutside from '../../../utils/clickoutside';
 export default {
   name: "kiwi-select",
+  directives: { clickoutside },
   data(){
     return{
       focusBorder: false,
@@ -119,6 +121,7 @@ export default {
       this.$emit('focus', e)
     },
     handleClickItem(e){
+      e.path[1].scrollTop = 0;
       e.stopPropagation();
       this.val = e.target.outerText;
       this.setValue(e.target.outerText);
@@ -181,6 +184,7 @@ export default {
   text-align: center;
   line-height: 40px;
   height: 20%;
+  width: 190px;
   box-sizing: border-box;
   font-size: 14px;
   color: #606266;
