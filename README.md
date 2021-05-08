@@ -21,8 +21,11 @@
 基于`vue2.x` 目前正在仿照element摸索开发中
 
 > 注意：此框架只供学习使用，严禁在涉及商业的任何场所使用
+
+## Example page
+> kiwi/examples
   
-## target
+## Target
   + 能够扩充丰富的组件和功能
   + 使用起来自由灵活
   + 自定义主题
@@ -39,6 +42,7 @@
 > import 'uikiwi/lib/uikiwi.css';
 > 
 > Vue.use(uikiwi)
+
 
 ## Elements
 + `kiwi-button` Button 按钮组件
