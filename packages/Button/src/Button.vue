@@ -11,6 +11,7 @@
         'is-round': round,
         'is-disabled': disabled
       },
+      size ? 'kiwi-button-size-' + size : '',
     ]"
   >
     <slot></slot>
@@ -22,6 +23,10 @@ export default {
   name: "kiwi-button",
   props: {
     type: {
+      type: String,
+      default: "normal",
+    },
+    size: {
       type: String,
       default: "normal",
     },
@@ -59,6 +64,18 @@ export default {
   outline: none;
   border-radius: 3px;
   border: none;
+}
+.kiwi-button-size-small{
+  width: 50px !important;
+  height: 35px !important;
+}
+.kiwi-button-size-normal{
+  width: 80px !important; 
+  height: 35px !important;
+}
+.kiwi-button-size-huge{
+  width: 90px !important;
+  height: 45px !important;
 }
 /* 普通按钮 */
 .kiwi-button--normal {

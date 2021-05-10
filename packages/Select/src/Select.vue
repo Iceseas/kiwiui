@@ -4,7 +4,7 @@
     v-clickoutside="handleCloseOpions"
     :class="[
       'kiwi-select--init',
-      focusBorder?'kiwi-select--box_nohver':'kiwi-select--box',
+      focusBorder?'kiwi-select--box_nohver': disabled? 'kiwi-select--box_nohver' :'kiwi-select--box',
       {
         'is-focus-border': disabled? false : focusBorder,
         'is-blur-border': disabled? false : blurBorder,
@@ -105,6 +105,7 @@ export default {
     handleCloseOpions(){
       this.showOptions = false;
       this.focusBorder = false;
+      this.blurBorder = true;
     },
     // 点击选择框聚焦
     handleSelectFocus(e){
@@ -143,6 +144,7 @@ export default {
   left: 0;
   top: 40px;
   padding: 5px 0;
+  height: 0px;
   width: 190px;
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07);
@@ -170,9 +172,8 @@ export default {
   border-left: 7px solid transparent;
 }
 .show-options{
-  height: auto;
-  max-height: 200px;
-  transition: 0.3s;
+  height: 200px;
+  transition: 0.2s;
 }
 .close-options{
   height: 0px;
@@ -182,8 +183,7 @@ export default {
 /* 各选项的样式 */
 .kiwi-select--item{
   text-align: center;
-  line-height: 40px;
-  height: 20%;
+  line-height: 35px;
   width: 190px;
   box-sizing: border-box;
   font-size: 14px;
@@ -197,7 +197,7 @@ export default {
 .kiwi-select--box_nohver,
 .kiwi-select--box{
   width: 190px;
-  height: 30px;
+  height: 35px;
   display: inline-block;
   line-height: 28px;
   box-sizing: border-box;

@@ -2,13 +2,15 @@ import kiwiButton from './Button'
 import kiwiInput from './Input'
 import kiwiLink from './Link'
 import kiwiSelect from './Select'
+import kiwiTransfer from './Transfer'
 
 // 组件列表
 const components = [
   kiwiButton,
   kiwiInput,
   kiwiLink,
-  kiwiSelect
+  kiwiSelect,
+  kiwiTransfer
 ]
 
 
@@ -29,5 +31,9 @@ export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
   // 以下是具体的组件列表
-  kiwiButton
+  kiwiButton,
+  kiwiInput,
+  kiwiLink,
+  kiwiSelect,
+  kiwiTransfer
 }

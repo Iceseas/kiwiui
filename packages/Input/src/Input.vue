@@ -136,7 +136,7 @@ export default {
 .kiwi-input--box_nohver,
 .kiwi-input--box{
   width: 190px;
-  height: 30px;
+  height: 35px;
   display: inline-block;
   line-height: 28px;
   box-sizing: border-box;
@@ -193,7 +193,7 @@ export default {
 /* 处理input flex 1失效问题 */
 .dell_input_flex{
   flex: 1;
-  line-height: 18px;
+  line-height: 23px;
 }
 input::-webkit-input-placeholder{
   color: #d4d5d6;
@@ -214,7 +214,7 @@ input:-ms-input-placeholder{
   text-align: right;
   box-sizing: border-box;
   height: 100%;
-  line-height: 16px;
+  line-height: 21px;
   font-weight: 600;
   font-size: 12px;
 }

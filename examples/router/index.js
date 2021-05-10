@@ -28,14 +28,6 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Button/index')
         },
         {
-          path: '/index/Radio',
-          name: 'Radio',
-          meta:{
-            name: 'Radio'
-          },
-          component: ()=> import ('../views/Radio/index')
-        },
-        {
           path: '/index/Link',
           name: 'Link',
           meta:{

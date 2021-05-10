@@ -1,6 +1,7 @@
 <template>
   <div class="main_page_init">
     <p class="logo_text">KIWI UI</p>
+    <p class="title_init title_4">作者为了巩固自己的技术，准备开发一个组件库。</p>
     <p class="title_init title_4">KIWI UI目前是基于vue2.x的一套前端UI框架，正在开发中</p>
     <p class="title_init title_4">注意：本组件库只用于作者本人学习，不可用于商用以及商用形式的任何场所。</p>
     <p class="title_init title_2">目标</p>
