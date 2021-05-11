@@ -145,6 +145,7 @@ export default {
   top: 40px;
   padding: 5px 0;
   height: 0px;
+  opacity: 0;
   width: 190px;
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07);
@@ -172,12 +173,14 @@ export default {
   border-left: 7px solid transparent;
 }
 .show-options{
+  opacity: 1;
   height: 200px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .close-options{
+  opacity: 0;
   height: 0px;
-  transition: 0.2s;
+  transition: 0.4s;
   padding: 0;
 }
 /* 各选项的样式 */

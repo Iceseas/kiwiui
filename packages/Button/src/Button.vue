@@ -74,7 +74,7 @@ export default {
   height: 35px !important;
 }
 .kiwi-button-size-huge{
-  width: 90px !important;
+  width: 100px !important;
   height: 45px !important;
 }
 /* 普通按钮 */

@@ -52,6 +52,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Input/index')
         },
         {
+          path: '/index/Radio',
+          name: 'Radio',
+          meta:{
+            name: 'Radio'
+          },
+          component: ()=> import ('../views/Radio/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{

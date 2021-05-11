@@ -2,7 +2,7 @@ import kiwiButton from './Button'
 import kiwiInput from './Input'
 import kiwiLink from './Link'
 import kiwiSelect from './Select'
-import kiwiTransfer from './Transfer'
+import kiwiRadio from './Radio'
 
 // 组件列表
 const components = [
@@ -10,7 +10,7 @@ const components = [
   kiwiInput,
   kiwiLink,
   kiwiSelect,
-  kiwiTransfer
+  kiwiRadio
 ]
 
 
@@ -35,5 +35,5 @@ export default {
   kiwiInput,
   kiwiLink,
   kiwiSelect,
-  kiwiTransfer
+  kiwiRadio
 }

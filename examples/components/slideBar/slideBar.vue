@@ -18,6 +18,9 @@
     <router-link :class="['slideItem' , activePath=='Select'?' slideItemActive':'']" to="/index/Select" >
       Select 选择框
     </router-link>
+    <router-link :class="['slideItem' , activePath=='Radio'?' slideItemActive':'']" to="/index/Radio" >
+      Radio 单选框
+    </router-link>
   </div>
 </template>
 

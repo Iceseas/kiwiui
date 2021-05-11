@@ -2,8 +2,8 @@
   <div class="kiwi-transfer--box">
     <div class="kiwi-transfer-leftbox"></div>
     <div class="kiwi-transfer-midbox">
-      <kiwi-button size="small">&#60;</kiwi-button>
-      <kiwi-button size="small">&#62;</kiwi-button>
+      <kiwi-button class="kiwi-transfer-btn" size="small">&#60;</kiwi-button>
+      <kiwi-button class="kiwi-transfer-btn" size="small">&#62;</kiwi-button>
     </div>
     <div class="kiwi-transfer-rightbox"></div>
   </div>
@@ -23,7 +23,6 @@ export default {
 .kiwi-transfer--box{
   height: 320px;
   width: 600px;
-  background: #eee;
   display: flex;
 }
 .kiwi-transfer-leftbox,
@@ -35,5 +34,16 @@ export default {
 .kiwi-transfer-midbox{
   flex: 1;
   position: relative;
+}
+.kiwi-transfer-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.kiwi-transfer-btn:nth-of-type(1){
+  left: 0;
+}
+.kiwi-transfer-btn:nth-of-type(2){
+  right: 0;
 }
 </style>

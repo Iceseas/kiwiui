@@ -111,6 +111,25 @@
         &#60;kiwi-button type="warning" plain round disabled&#62;警告按钮&#60;/kiwi-button&#62;
       </pre>
     </div>
+    <p class="title_init title_3">尺寸</p>
+    <p class="title_init">提供了三种尺寸，你可以使用
+      <span class="highlight_code">size</span>
+      属性来定义按钮的大小
+    </p>
+    <div class="component_show_block">
+      <kiwi-button type="default">默认大小</kiwi-button>
+      <kiwi-button type="default" size="small">小按钮</kiwi-button>
+      <kiwi-button type="default" size="huge">大按钮</kiwi-button>
+    </div>
+    <p class="title_init">查看代码</p>
+    <div class="component_show_block">
+      <pre>
+        默认按钮:
+        &#60;kiwi-button type="default"&#62;默认大小&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="error" size="small"&#62;小按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="success" size="huge"&#62;大按钮&#60;/kiwi-button&#62;
+      </pre>
+    </div>
     <p class="title_init title_3">Attributes</p>
     <table class="attributes_table">
       <thead>
@@ -178,12 +197,20 @@ export default {
           type: 'boolean',
           items: '-',
           default: 'false'
-        },{
+        },
+        {
           name: 'disabled',
           explain: '是否禁用',
           type: 'boolean',
           items: '-',
           default: 'false'
+        },
+        {
+          name: 'size',
+          explain: '按钮大小',
+          type: 'string',
+          items: 'samll/normal/huge',
+          default: 'normal'
         },
         {
           name: 'nativeType',

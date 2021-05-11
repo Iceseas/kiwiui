@@ -51,7 +51,6 @@ export default {
       blurBorder: false,
       noInputHover: false,
       nowLength: 0,
-      value: null,
       val: '',
     }
   },
