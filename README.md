@@ -72,5 +72,5 @@
 + `kiwi-input` `kiwi-select` 调整样式
 
 ### 0.1.1
-**修复bug：**
+**bug修复：**
 + example页面错误
