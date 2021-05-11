@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.0.4-green">
+    <img src="https://img.shields.io/badge/npm-0.1.1-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
