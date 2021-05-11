@@ -174,7 +174,8 @@ export default {
 }
 .show-options{
   opacity: 1;
-  height: 200px;
+  height: auto;
+  max-height: 200px;
   transition: 0.4s;
 }
 .close-options{

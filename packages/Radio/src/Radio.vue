@@ -86,6 +86,7 @@ export default {
 .kiwi-radio-block{
   display: inline-block;
   cursor: pointer;
+  margin: 0 10px;
 }
 .radio-disabeld{
   cursor: not-allowed !important;

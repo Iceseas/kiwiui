@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.0.4-green">
+    <img src="https://img.shields.io/badge/npm-0.1.2-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
@@ -74,3 +74,10 @@
 ### 0.1.1
 **修复bug：**
 + example页面错误
+
+### 0.1.2
+**修复bug：**
++ `kiwi-select` 调整样式 修复选项少的情况下下拉框的高度
+  
+**优化：**
++ `kiwi-radio` 调整样式
