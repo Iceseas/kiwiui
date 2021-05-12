@@ -14,7 +14,7 @@
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
   </a>
-  <a href="Iceseas.github.io">
+  <a href="https://Iceseas.github.io">
     <img src="https://img.shields.io/badge/view-example-brightgreen">
   </a>
 </p>
