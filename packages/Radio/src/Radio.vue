@@ -63,12 +63,23 @@ export default {
     }
   },
   computed:{
+    isGroup() {
+      let parent = this.$parent;
+      while(parent) {
+        if (parent.$options._componentTag != 'kiwi-radio-group'){
+          parent = parent.$parent;
+        } else {
+          return true;
+        }
+      }
+      return false;
+    },
     model:{
       get(){
-           return this.value
+           return this.isGroup ? this.$parent.value : this.value;
         },
         set(value){
-           this.$emit('input',value);
+           this.isGroup ? this.$parent.$emit('input',value) : this.$emit('input',value);
            this.$refs.radio && (this.$refs.radio.checked = this.model === this.val);
        }
     }
@@ -97,6 +108,7 @@ export default {
   position: relative;
   display: flex;
   height: 16px;
+  line-height: 16px;
   width: 80px;
   box-sizing: border-box;
 }

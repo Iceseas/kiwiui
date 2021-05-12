@@ -14,6 +14,9 @@
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-10%25-blue">
   </a>
+  <a href="Iceseas.github.io">
+    <img src="https://img.shields.io/badge/view-example-brightgreen">
+  </a>
 </p>
 
 # 🥝KIWIUI 前端组件库
@@ -25,7 +28,7 @@
 > 注意：此组件库只供学习使用，严禁在涉及商业的任何场所使用
 
 ## Example page
-> kiwi/examples
+[example page/api page](Iceseas.github.io)
   
 ## Target
   + 能够扩充丰富的组件和功能
@@ -81,3 +84,18 @@
   
 **优化：**
 + `kiwi-radio` 调整样式
+
+### 0.1.3
+**新增：**
++ `kiwi-radio-group` 单选框组
+  
+**优化：**
++ `kiwi-radio` 调整样式
+
+### 0.1.4
+**bug修复：**
++ 修复一个紧急bug
+
+### 0.1.5
+**调整了结构：**
++ 将0.1.3和0.1.4版本unpublish

@@ -15,7 +15,7 @@
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        默认输入框:
+        默认选择框:
         &#60;kiwi-select v-model="data" :kw-options="options" &#62; &#60;/kiwi-select&#62;
         export default {
         data(){
@@ -38,7 +38,7 @@
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        默认输入框:
+        禁用选择框:
         &#60;kiwi-select v-model="data" disabled &#62; &#60;/kiwi-select&#62;
       </pre>
     </div>
