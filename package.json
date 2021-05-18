@@ -1,6 +1,6 @@
 {
   "name": "uikiwi",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -53,7 +53,7 @@
       "git add"
     ]
   },
-  "description": "自己尝试写的前端组件库，目前正在仿照element摸索中，仅供学习",
+  "description": "🥝KIWIUI 前端组件库，目前正在仿照element摸索中，仅供学习",
   "main": "lib/uikiwi.common.js",
   "repository": {
     "type": "git",

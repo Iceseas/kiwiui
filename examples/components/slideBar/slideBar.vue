@@ -21,6 +21,9 @@
     <router-link :class="['slideItem' , activePath=='Radio'?' slideItemActive':'']" to="/index/Radio" >
       Radio 单选框
     </router-link>
+    <router-link :class="['slideItem' , activePath=='Checkbox'?' slideItemActive':'']" to="/index/Checkbox" >
+      Checkbox 多选框
+    </router-link>
   </div>
 </template>
 

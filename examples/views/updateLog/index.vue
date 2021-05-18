@@ -70,6 +70,35 @@
         调整样式
       </p>
     </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.4</p>
+      <p class="title_init title_3">bug修复：</p>
+      <p class="list_style">
+        修复一个紧急bug
+      </p>
+    </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.5</p>
+      <p class="title_init title_3">调整了结构：</p>
+      <p class="list_style">
+        将
+        <span class="highlight_code">0.1.3</span>
+        <span class="highlight_code">0.1.4</span>
+        unpublish
+      </p>
+    </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.5</p>
+      <p class="title_init title_3">新增：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-checkbox</span>
+        多选框
+      </p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-checkbox-group</span>
+        多选框组
+      </p>
+    </div>
   </div>
 </template>
 

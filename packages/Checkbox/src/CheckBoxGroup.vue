@@ -1,14 +1,14 @@
 <template>
-  <div class="kiwi-radio-group">
+  <div class="kiwi-checkbox-group">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name:'kiwi-radio-group',
+  name:'kiwi-checkbox-group',
   props:{
-    value: {},
+    value: Array,
     disabeld:{
       type:Boolean,
       default: false
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-.kiwi-radio-group{
+.kiwi-checkbox-group{
   display: inline-block;
 }
 </style>

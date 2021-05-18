@@ -4,6 +4,7 @@
     <p class="title_init title_4">作者为了巩固自己的技术，准备开发一个组件库。</p>
     <p class="title_init title_4">KIWI UI目前是基于vue2.x的一套前端UI框架，正在开发中</p>
     <p class="title_init title_4">注意：本组件库只用于作者本人学习，不可用于商用以及商用形式的任何场所。</p>
+    <p class="title_init title_4"><kiwi-link href="https://github.com/Iceseas/kiwiui">作者github地址</kiwi-link></p>
     <p class="title_init title_2">目标</p>
     <p class="title_init">
       <span class="list_style">丰富的组件和功能，满足绝大部分网站场景</span>
@@ -23,8 +24,11 @@
 </template>
 
 <script>
+import kiwiLink from '../../../packages/Link/src/Link'
 export default {
-  
+  components:{
+    kiwiLink
+  }
 }
 </script>
 

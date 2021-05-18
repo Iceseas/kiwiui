@@ -9,10 +9,10 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.1.5-green">
+    <img src="https://img.shields.io/badge/npm-0.1.6-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
-    <img src="https://img.shields.io/badge/coverage-10%25-blue">
+    <img src="https://img.shields.io/badge/coverage-12%25-blue">
   </a>
   <a href="https://Iceseas.github.io">
     <img src="https://img.shields.io/badge/view-example-brightgreen">
@@ -55,6 +55,7 @@
 + `kiwi-input` input 输入框组件
 + `kiwi-select` select 下拉选择框组件
 + `kiwi-radio` radio 单选框组件
++ `kiwi-checkbox` checkbox 多选框组件
 
 ## 更新日志
 ### 0.0.9
@@ -99,3 +100,11 @@
 ### 0.1.5
 **调整了结构：**
 + 将0.1.3和0.1.4版本unpublish
+
+### 0.1.6
+**新增：**
++ `kiwi-checkbox` 多选框
++ `kiwi-checkbox-group` 多选框组
+  
+**优化：**
++ `kiwi-radio` 调整样式

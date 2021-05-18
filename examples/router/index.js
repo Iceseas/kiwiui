@@ -60,6 +60,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Radio/index')
         },
         {
+          path: '/index/Checkbox',
+          name: 'Checkbox',
+          meta:{
+            name: 'Checkbox'
+          },
+          component: ()=> import ('../views/Checkbox/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{
