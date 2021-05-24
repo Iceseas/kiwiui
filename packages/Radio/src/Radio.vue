@@ -19,7 +19,7 @@
           'kiwi-radio--circle' + '',
           !disabeld && (model === val)? 'radio-circle-show' : 'radio-circle-close'
         ]"></span>
-        <input 
+        <input  
           ref="radio"
           class="kiwi-radio--input-init"
           type="radio"
@@ -56,11 +56,6 @@ export default {
     },
     val: {},
     value: {}
-  },
-  data(){
-    return {
-
-    }
   },
   computed:{
     isGroup() {

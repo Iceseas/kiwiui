@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.1.6-green">
+    <img src="https://img.shields.io/badge/npm-0.1.7-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-12%25-blue">
@@ -28,7 +28,7 @@
 > 注意：此组件库只供学习使用，严禁在涉及商业的任何场所使用
 
 ## Example page
-[example page/api page](Iceseas.github.io)
+[example page/api page](https://Iceseas.github.io)
   
 ## Target
   + 能够扩充丰富的组件和功能
@@ -108,3 +108,7 @@
   
 **优化：**
 + `kiwi-radio` 调整样式
+
+### 0.1.7
+**bug修复：**
++ 修复了`kiwi-input` `kiwi-select`对于使用`v-model`后只单向绑定的bug

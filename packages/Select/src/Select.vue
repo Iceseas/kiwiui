@@ -20,12 +20,11 @@
         type="text" 
         :disabled="false"
         :autofocus="false"
-        name=""
+        :name="name"
         :readonly="filterable ? false : true"
-        :value="val"
+        v-model="model"
         class="input_init"
         placeholder="请选择"
-        @input="disabled? '' : handleUpdateValue($event.target.value)"
         @focus="disabled? '' : handleInputFocus($event)"
         @blur="disabled? '' : handleInputBlur($event)"
       />
@@ -57,9 +56,17 @@ export default {
       focusBorder: false,
       blurBorder: false,
       showOptions: false,
-      value: null,
-      val: '',
     }
+  },
+  computed: {
+    model: {
+      get() {
+        return this.value;
+      },
+      set(newVal) {
+        this.$emit("input", newVal);
+      },
+    },
   },
   props:{
     showClean:{
@@ -74,18 +81,12 @@ export default {
       type: Boolean,
       default: false
     },
-    kwOptions: Array
+    kwOptions: Array,
+    val: {},
+    value: {},
+    name: String
   },
   methods:{
-    // 处理输入事件
-    handleUpdateValue(value) {
-      this.setValue(value);
-    },
-    // 更新内容
-    setValue(val){
-      this.val = val;
-      this.$emit('input', val);
-    },
     // 输入框聚焦--如果输入框聚焦控制样式
     handleInputFocus(e){
       this.focusBorder = true;
@@ -124,8 +125,7 @@ export default {
     handleClickItem(e){
       e.path[1].scrollTop = 0;
       e.stopPropagation();
-      this.val = e.target.outerText;
-      this.setValue(e.target.outerText);
+      this.$emit("input", e.target.outerText);
       this.$emit('change', e.target.outerText);
     }
   }

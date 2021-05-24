@@ -24,6 +24,9 @@
     <router-link :class="['slideItem' , activePath=='Checkbox'?' slideItemActive':'']" to="/index/Checkbox" >
       Checkbox 多选框
     </router-link>
+    <router-link :class="['slideItem' , activePath=='Transfer'?' slideItemActive':'']" to="/index/Transfer" >
+      Transfer 穿梭框
+    </router-link>
   </div>
 </template>
 

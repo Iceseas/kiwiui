@@ -151,7 +151,6 @@
 }
 .attributes_table tr{
   width: 100%;
-  display: block;
   padding: 10px 5px;
   border-bottom: 1px solid #EBEEF5;
   display: flex;

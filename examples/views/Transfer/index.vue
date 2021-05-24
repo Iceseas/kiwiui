@@ -1,5 +1,5 @@
 <template>
-  <div class="main_page_init">
+  <div>
     <kiwi-transfer></kiwi-transfer>
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 import kiwiTransfer from '../../../packages/Transfer/src/Transfer'
 export default {
-  components:{
+  components: {
     kiwiTransfer
   }
 }

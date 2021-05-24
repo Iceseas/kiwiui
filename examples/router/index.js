@@ -68,6 +68,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Checkbox/index')
         },
         {
+          path: '/index/Transfer',
+          name: 'Transfer',
+          meta:{
+            name: 'Transfer'
+          },
+          component: ()=> import ('../views/Transfer/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{
