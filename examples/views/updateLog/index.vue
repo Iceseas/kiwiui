@@ -88,7 +88,7 @@
       </p>
     </div>
     <div class="component_show_block">
-      <p class="title_init title_2">0.1.5</p>
+      <p class="title_init title_2">0.1.6</p>
       <p class="title_init title_3">新增：</p>
       <p class="list_style">
         <span class="highlight_code">kiwi-checkbox</span>
@@ -97,6 +97,28 @@
       <p class="list_style">
         <span class="highlight_code">kiwi-checkbox-group</span>
         多选框组
+      </p>
+    </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.7</p>
+      <p class="title_init title_3">bug修复：</p>
+      <p class="list_style">
+        修复了
+        <span class="highlight_code">kiwi-input</span>和
+        <span class="highlight_code">kiwi-select</span>
+        只能单向绑定的错误
+      </p>
+    </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.8</p>
+      <p class="title_init title_3">新增：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-switch</span>开关组件
+      </p>
+      <p class="title_init title_3">优化：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-checkbox</span>
+        调整样式
       </p>
     </div>
   </div>

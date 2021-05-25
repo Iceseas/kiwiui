@@ -115,6 +115,13 @@ export default {
           items: '-',
           default: 'false'
         },
+        {
+          name: 'value / v-model',
+          explain: '绑定值',
+          type: 'string / number / boolean',
+          items: '-',
+          default: '-'
+        },
       ]
     }
   },

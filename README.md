@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.1.7-green">
+    <img src="https://img.shields.io/badge/npm-0.1.8-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-12%25-blue">
@@ -56,6 +56,7 @@
 + `kiwi-select` select 下拉选择框组件
 + `kiwi-radio` radio 单选框组件
 + `kiwi-checkbox` checkbox 多选框组件
++ `kiwi-switch` switch 开关组件
 
 ## 更新日志
 ### 0.0.9
@@ -112,3 +113,10 @@
 ### 0.1.7
 **bug修复：**
 + 修复了`kiwi-input` `kiwi-select`对于使用`v-model`后只单向绑定的bug
+
+### 0.1.8
+**新增：**
++ `kiwi-switch` 开关组件
+
+**优化：**
++ `kiwi-checkbox` 调整样式

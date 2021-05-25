@@ -98,7 +98,7 @@ export default {
   methods:{
     handleChangeCheckbox(){
       this.model = !this.model;
-      if (this.isGroup) {
+      if (this.isGroup && !this.disabled) {
         // 如果group数组存在此元素则删除
         if(this.$parent.value.includes(this.val)){
           this.$parent.value.splice(this.$parent.value.indexOf(this.val), 1)
@@ -152,6 +152,7 @@ export default {
   height: 13px;
   margin-top: 2px;
   border: 1px solid #999;
+  border-radius: 3px;
   display: inline-block;
   box-sizing: border-box;
   position: relative;

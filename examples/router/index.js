@@ -76,6 +76,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Transfer/index')
         },
         {
+          path: '/index/Switch',
+          name: 'Switch',
+          meta:{
+            name: 'Switch'
+          },
+          component: ()=> import ('../views/Switch/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{
@@ -94,7 +102,9 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
 })
+
+
 
 export default router

@@ -9,8 +9,6 @@
     </p>
     <div class="component_show_block">
       <kiwi-input v-model="data" />
-      <button @click="showData">show</button>
-      <button @click="setData">change</button>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
@@ -177,14 +175,6 @@ export default {
   components:{
     kiwiInput,
   },  
-  methods:{
-    showData(){
-      console.log(this.data)
-    },
-    setData(){
-      this.data = '123'
-    }
-  }
 }
 </script>
 
