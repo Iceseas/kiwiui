@@ -57,6 +57,7 @@
 + `kiwi-radio` radio 单选框组件
 + `kiwi-checkbox` checkbox 多选框组件
 + `kiwi-switch` switch 开关组件
++ `kiwi-input-num` inputNum 计数器组件
 
 ## 更新日志
 ### 0.0.9
