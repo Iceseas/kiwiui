@@ -1,74 +1,95 @@
 <template>
   <div class="main_page_init">
-    <p class="title_init title_2">Input 输入框</p>
-    <p class="title_init title_4">通过鼠标或键盘输入字符</p>
+    <p class="title_init title_2">Input-num 计数器</p>
+    <p class="title_init title_4">仅允许输入标准的数字值，可定义范围</p>
     <p class="title_init title_3">基础使用</p>
     <p class="title_init">使用
       <span class="highlight_code">v-model</span>
-      绑定已选中的变量
+      绑定number类型的变量
     </p>
     <div class="component_show_block">
-      <kiwi-input v-model="data"/>
+      <kiwi-input-num v-model="num"></kiwi-input-num>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        默认输入框:
-        &#60;kiwi-input v-model="data" /&#62;
+        默认计数器:
+        &#60;kiwi-input v-model="num" /&#62;
         export default {
         data(){
           return {
-            data: '',
+            num: 1,
           }
         }
       }
       </pre>
     </div>
-    <p class="title_init title_3">禁用状态</p>
+    <p class="title_init title_3">禁用模式</p>
     <p class="title_init">使用
       <span class="highlight_code">disabled</span>
-      禁用输入框
+      禁用计数器
     </p>
     <div class="component_show_block">
-      <kiwi-input v-model="data2" disabled />
+      <kiwi-input-num v-model="num2" disabled></kiwi-input-num>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        禁用输入框:
-        &#60;kiwi-input v-model="data" disabled /&#62;
+        禁用计数器:
+        &#60;kiwi-input v-model="num2" disabled/&#62;
+        export default {
+        data(){
+          return {
+            num2: 1,
+          }
+        }
+      }
       </pre>
     </div>
-    <p class="title_init title_3">只读状态</p>
-    <p class="title_init">使用
+    <p class="title_init title_3">步数</p>
+    <p class="title_init">向
+      <span class="highlight_code">step</span>
+      传递一个
+      <span class="highlight_code">number</span>
+      值
+    </p>
+    <div class="component_show_block">
+      <kiwi-input-num v-model="num3" :step="3"></kiwi-input-num>
+    </div>
+    <p class="title_init">查看代码</p>
+    <div class="component_show_block">
+      <pre>
+        定义步数:
+        &#60;kiwi-input v-model="num3" :step="3"/&#62;
+        export default {
+        data(){
+          return {
+            num3: 1,
+          }
+        }
+      }
+      </pre>
+    </div>
+    <p class="title_init title_3">只读</p>
+    <p class="title_init">使用属性
       <span class="highlight_code">readonly</span>
-      使输入框为只读状态
+      将中间输入框变为只读模式
     </p>
     <div class="component_show_block">
-      <kiwi-input v-model="data3" readonly />
+      <kiwi-input-num v-model="num4" readonly></kiwi-input-num>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        只读输入框:
-        &#60;kiwi-input v-model="data" readonly /&#62;
-      </pre>
-    </div>
-    <p class="title_init title_3">限制字数</p>
-    <p class="title_init">使用
-      <span class="highlight_code">maxlength</span>
-      限制字数配合
-      <span class="highlight_code">showWordLimit</span>
-      使用，友好的显示
-    </p>
-    <div class="component_show_block">
-      <kiwi-input v-model="data4" maxlength="30" showWordLimit />
-    </div>
-    <p class="title_init">查看代码</p>
-    <div class="component_show_block">
-      <pre>
-        限制字数输入框:
-        &#60;kiwi-input v-model="data" maxlength="30" showWordLimit /&#62;
+        只读计数器:
+        &#60;kiwi-input v-model="num4" readonly/&#62;
+        export default {
+        data(){
+          return {
+            num4: 1,
+          }
+        }
+      }
       </pre>
     </div>
     <p class="title_init title_3">Attributes</p>
@@ -99,11 +120,6 @@
       </thead>
       <tbody>
         <tr>
-          <td>input</td>
-          <td>	在组件 Input 输入时触发</td>
-          <td>(event: Event)</td>
-        </tr>
-        <tr>
           <td>blur</td>
           <td>	在组件 Input 失去焦点时触发</td>
           <td>(event: Event)</td>
@@ -119,23 +135,16 @@
 </template>
 
 <script>
-import kiwiInput from '../../../packages/Input/src/Input'
+import kiwiInputNum from '../../../packages/Input/src/InputNum'
 export default {
   data(){
-    return {
-      data: '',
-      data2: '',
-      data3: '',
-      data4: '',
+    return{
+      num: 1,
+      num2: 1,
+      num3: 1,
+      num4: 1,
       attributes_type:['参数','说明','类型','可选值','默认值'],
       attributes_content:[
-        {
-          name: 'type',
-          explain: '类型',
-          type: 'string',
-          items: '原生 input 的 type 值',
-          default: 'text'
-        },
         {
           name: 'v-model',
           explain: '绑定值',
@@ -151,43 +160,29 @@ export default {
           default: 'false'
         },
         {
-          name: 'maxlength',
-          explain: '原生maxlength属性',
+          name: ':maxNum',
+          explain: '限制最大值',
           type: 'number',
           items: '-',
-          default: '-'
+          default: '10'
         },
         {
-          name: 'minlength',
-          explain: '原生minlength属性',
+          name: ':minNum',
+          explain: '限制最小值',
           type: 'number',
           items: '-',
-          default: '-'
+          default: '1'
         },
         {
-          name: 'placeholder',
-          explain: '输入框占位文本',
-          type: 'striing',
+          name: ':step',
+          explain: '每次增加或减少的值',
+          type: 'number',
           items: '-',
-          default: '-'
-        },
-        {
-          name: 'showWordLimit',
-          explain: '显示限制最大字数，配合maxlength使用',
-          type: 'Boolean',
-          items: '-',
-          default: 'false'
+          default: '1'
         },
         {
           name: 'readonly',
           explain: '只读，原生readonly属性',
-          type: 'Boolean',
-          items: '-',
-          default: 'false'
-        },
-        {
-          name: 'autofocus',
-          explain: '原生属性，自动获取焦点',
           type: 'Boolean',
           items: '-',
           default: 'false'
@@ -203,8 +198,10 @@ export default {
     }
   },
   components:{
-    kiwiInput,
-  },  
+    kiwiInputNum
+  },
+  methods:{
+  }
 }
 </script>
 

@@ -13,7 +13,7 @@
     ]"
     @click="disabled?'':handleSelectFocus($event)"
   >
-    <div class="kkiwi-select-inlinebox">
+    <div class="kiwi-select-inlinebox">
       <div class="dell_select_flex">
       <input 
         ref="input"
@@ -29,6 +29,15 @@
         @blur="disabled? '' : handleInputBlur($event)"
       />
       </div>
+      <i 
+        :class="[
+          'iconfont' + '', 
+          'icon-arrow-down' + '',
+          'rotate-icon' + '',
+          {
+            'rotate-down' : showOptions
+          }
+        ]"></i>
         <div class="kiwi-select--else" v-if="showClean"></div>
     </div>
     <!-- 下拉框显示 -->
@@ -137,6 +146,7 @@ export default {
   position: relative;
   cursor: pointer;
   background: #fff;
+  z-index: 999;
 }
 /* 下拉框样式 */
 .kiwi-select--options{
@@ -211,8 +221,9 @@ export default {
   position: relative;
 }
 /* 内flex盒子 */
-.kkiwi-select-inlinebox{
+.kiwi-select-inlinebox{
   box-sizing: border-box;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -256,6 +267,7 @@ export default {
   cursor: pointer;
   padding: 10px;
   box-sizing: border-box;
+  z-index: -2;
 }
 /* 处理input flex 1失效问题 */
 .dell_select_flex{
@@ -272,5 +284,19 @@ export default {
   line-height: 16px;
   font-weight: 600;
   font-size: 12px;
+}
+.rotate-icon{
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  z-index: -1;
+  transition: 0.5s;
+  transform: rotate(-180deg);
+  height: 100%;
+  line-height: 35px;
+}
+.rotate-down{
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
 </style>

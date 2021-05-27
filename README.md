@@ -117,6 +117,12 @@
 ### 0.1.8
 **新增：**
 + `kiwi-switch` 开关组件
++ `kiwi-input-num` 计数器组件  目前只支持整数，后续会继续增加浮点数以及精度
 
 **优化：**
++ `kiwi-input` 增加input事件处理
+一些组件加入iconfont优化样式
 + `kiwi-checkbox` 调整样式
++ `kiwi-select` 调整样式
+
+

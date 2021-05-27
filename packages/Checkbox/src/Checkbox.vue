@@ -18,7 +18,7 @@
           :class="[
             'kiwi-checkbox--circle' + '',
             !disabled && model ? 'checkbox-checked-show' : 'checkbox-checked-close'
-        ]">√</span>
+        ]"><i class="iconfont icon-gouxuan"></i></span>
         <!-- 单独使用 -->
         <input 
           v-if="!isGroup"
@@ -203,5 +203,9 @@ export default {
 .nochecked-label{
   color: #606266;
   transition:0.3s;
+}
+.icon-gouxuan{
+  color: #fff;
+  font-size: 12px;
 }
 </style>

@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1621935196496') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gou:before {
+  content: "\e63d";
+}
+
+.icon-jia:before {
+  content: "\e611";
+}
+
+.icon-jia1:before {
+  content: "\e65a";
+}
+
+.icon-jian:before {
+  content: "\e715";
+}
+
+.icon-gouxuan:before {
+  content: "\e736";
+}
+
+.icon-tianjia:before {
+  content: "\e63b";
+}
+
+.icon-guanbi:before {
+  content: "\e63c";
+}
+
+.icon-sousuo:before {
+  content: "\e63e";
+}
+
+.icon-dingwei:before {
+  content: "\e63f";
+}
+
+.icon-wode:before {
+  content: "\e640";
+}
+
+.icon-fanhui:before {
+  content: "\e641";
+}
+
+.icon-xiayibu:before {
+  content: "\e642";
+}
+
+.icon-xiazai:before {
+  content: "\e643";
+}
+
+.icon-shengyin:before {
+  content: "\e644";
+}
+
+.icon-fenxiang:before {
+  content: "\e645";
+}
+
+.icon-wendu:before {
+  content: "\e646";
+}
+
+.icon-jianyi:before {
+  content: "\e647";
+}
+
+.icon-gengduo:before {
+  content: "\e648";
+}
+
+.icon-jiangbei:before {
+  content: "\e649";
+}
+
+.icon-libao:before {
+  content: "\e64a";
+}
+
+.icon-bianji:before {
+  content: "\e64b";
+}
+
+.icon-shezhi:before {
+  content: "\e64c";
+}
+
+.icon-arrow-down:before {
+  content: "\e61f";
+}
+
+.icon-arrow-left:before {
+  content: "\e620";
+}
+
+.icon-basic-editing:before {
+  content: "\e621";
+}
+
+.icon-close:before {
+  content: "\e622";
+}
+
+.icon-cell-phone:before {
+  content: "\e623";
+}
+
+.icon-arrow-right:before {
+  content: "\e624";
+}
+
+.icon-circle-plus-outline:before {
+  content: "\e625";
+}
+
+.icon-airlines:before {
+  content: "\e626";
+}
+
+.icon-documentation:before {
+  content: "\e627";
+}
+
+.icon-download:before {
+  content: "\e628";
+}
+
+.icon-global-editing:before {
+  content: "\e629";
+}
+
+.icon-save:before {
+  content: "\e62a";
+}
+
+.icon-lock:before {
+  content: "\e62b";
+}
+
+.icon-cms:before {
+  content: "\e62c";
+}
+
+.icon-pc:before {
+  content: "\e62d";
+}
+
+.icon-stencil:before {
+  content: "\e62e";
+}
+
+.icon-copy:before {
+  content: "\e62f";
+}
+
+.icon-view:before {
+  content: "\e630";
+}
+
+.icon-video:before {
+  content: "\e631";
+}
+
+.icon-warehouse:before {
+  content: "\e632";
+}
+
+.icon-fanhui1:before {
+  content: "\e64d";
+}
+
+.icon-yanjing:before {
+  content: "\e64e";
+}
+
+.icon-biyan:before {
+  content: "\e64f";
+}
+

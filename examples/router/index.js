@@ -84,6 +84,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Switch/index')
         },
         {
+          path: '/index/InputNum',
+          name: 'InputNum',
+          meta:{
+            name: 'InputNum'
+          },
+          component: ()=> import ('../views/InputNum/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{

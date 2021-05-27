@@ -29,8 +29,9 @@
           :value="val"
           :class="['input_init', type ? 'kiwi-input--' + type : '']"
           :placeholder="placeholder"
-          @focus="disabled ? '' : handleInputFocus()"
-          @blur="disabled ? '' : handleInputBlur()"
+          @input="disabled ? '' : handleInput($event)"
+          @focus="disabled ? '' : handleInputFocus($event)"
+          @blur="disabled ? '' : handleInputBlur($event)"
         />
       </div>
       <div
@@ -117,16 +118,20 @@ export default {
   },
   methods: {
     // 输入框聚焦--如果输入框聚焦控制样式
-    handleInputFocus() {
+    handleInputFocus(e) {
       this.focusBorder = true;
       this.blurBorder = false;
-      this.$emit("focus");
+      this.$emit("focus", e);
     },
     // 输入框失焦
-    handleInputBlur() {
+    handleInputBlur(e) {
       this.focusBorder = false;
       this.blurBorder = true;
-      this.$emit("blur");
+      this.$emit("blur", e);
+    },
+    // 输入事件
+    handleInput(e) {
+      this.$emit('input', e)
     },
     // 鼠标在输入框内点击左键--聚焦
     handleMousedown() {
