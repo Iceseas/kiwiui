@@ -11,7 +11,8 @@
     <div class="component_show_block">
       <pre>
         默认使用：
-        &#60;kiwi-checkbox v-model="checked1"&#62;&#60;/kiwi-checkbox&#62;
+        &#60;kiwi-checkbox v-model="checked1"&#62;
+        &#60;/kiwi-checkbox&#62;
         export default {
           data(){
             return {
@@ -36,8 +37,11 @@
     <div class="component_show_block">
       <pre>
         默认使用：
-        &#60;kiwi-checkbox v-model="checked1" disabled&#62;&#60;/kiwi-checkbox&#62;
-        &#60;kiwi-checkbox v-model="checked2" disabled&#62;&#60;/kiwi-checkbox&#62;
+        &#60;kiwi-checkbox v-model="checked1" disabled&#62;
+        &#60;/kiwi-checkbox&#62;
+
+        &#60;kiwi-checkbox v-model="checked2" disabled&#62;
+        &#60;/kiwi-checkbox&#62;
         export default {
           data(){
             return {
@@ -57,8 +61,13 @@
     <div class="component_show_block">
       <pre>
         自定选项：
-        &#60;kiwi-checkbox v-model="checked3"&#62;篮球&#60;/kiwi-checkbox&#62;
-        &#60;kiwi-checkbox v-model="checked4"&#62;足球&#60;/kiwi-checkbox&#62;
+        &#60;kiwi-checkbox v-model="checked3"&#62;
+        篮球
+        &#60;/kiwi-checkbox&#62;
+
+        &#60;kiwi-checkbox v-model="checked4"&#62;
+        足球
+        &#60;/kiwi-checkbox&#62;
         export default {
           data(){
             return {
@@ -93,8 +102,13 @@
       <pre>
         单选框组:
         &#60;kiwi-checkbox-group v-model="checkboxGroupValue"&#62;
-          &#60;kiwi-checkbox val="a"&#62;选项1&#60;/kiwi-checkbox&#62;
-          &#60;kiwi-checkbox val="b"&#62;选项2&#60;/kiwi-checkbox&#62;
+          &#60;kiwi-checkbox val="a"&#62;
+          选项1
+          &#60;/kiwi-checkbox&#62;
+
+          &#60;kiwi-checkbox val="b"&#62;
+          选项2
+          &#60;/kiwi-checkbox&#62;
         &#60;/kiwi-checkbox-group&#62;
         export default {
           data(){

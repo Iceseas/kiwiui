@@ -6,8 +6,8 @@
         <span class="text">KIWIUI</span>
       </div>
     </div>
-    <div class="main">
-      <div class="main_left">
+    <div :class="isMobile?'main_mobile':'main'">
+      <div :class="isMobile?'main_left_mobile':'main_left'">
         <slideBar />
       </div>
       <div class="main_right">
@@ -23,6 +23,15 @@ import slideBar from '../components/slideBar/slideBar'
 export default {
   components:{
     slideBar
+  },
+  computed:{
+    isMobile(){
+      if (this.$store.state.screenWidth < 1024) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   },
   data(){
     return{

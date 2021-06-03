@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    
+    screenWidth: document.documentElement.clientWidth,
+    screenHeight: document.documentElement.clientHeight
   },
   mutations: {
 

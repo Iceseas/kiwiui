@@ -68,7 +68,44 @@
     <div class="component_show_block">
       <pre>
         限制字数输入框:
-        &#60;kiwi-input v-model="data" maxlength="30" showWordLimit /&#62;
+        &#60;kiwi-input 
+          v-model="data" 
+          maxlength="30" 
+          showWordLimit /&#62;
+      </pre>
+    </div>
+    <p class="title_init title_3">可清空</p>
+    <p class="title_init">使用
+      <span class="highlight_code">showClean</span>
+      可显示可清空按钮
+    </p>
+    <div class="component_show_block">
+      <kiwi-input v-model="data5" showClean />
+    </div>
+    <p class="title_init">查看代码</p>
+    <div class="component_show_block">
+      <pre>
+        可清空输入框:
+        &#60;kiwi-input 
+          v-model="data5" 
+          showClean /&#62;
+      </pre>
+    </div>
+    <p class="title_init title_3">密码框可查看</p>
+    <p class="title_init">使用
+      <span class="highlight_code">showPassword</span>
+      可显示可查看密码
+    </p>
+    <div class="component_show_block">
+      <kiwi-input v-model="data6" showPassword />
+    </div>
+    <p class="title_init">查看代码</p>
+    <div class="component_show_block">
+      <pre>
+        可清空输入框:
+        &#60;kiwi-input 
+          v-model="data6" 
+          showPassword /&#62;
       </pre>
     </div>
     <p class="title_init title_3">Attributes</p>
@@ -127,6 +164,8 @@ export default {
       data2: '',
       data3: '',
       data4: '',
+      data5: '',
+      data6: '',
       attributes_type:['参数','说明','类型','可选值','默认值'],
       attributes_content:[
         {
@@ -198,7 +237,21 @@ export default {
           type: 'string',
           items: '-',
           default: '-'
-        }
+        },
+        {
+          name: 'showPassword',
+          explain: '显示密码',
+          type: 'boolean',
+          items: '-',
+          default: 'false'
+        },
+        {
+          name: 'showClean',
+          explain: '可清空',
+          type: 'boolean',
+          items: '-',
+          default: 'false'
+        },
       ]
     }
   },

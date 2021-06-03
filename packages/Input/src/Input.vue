@@ -35,13 +35,21 @@
         />
       </div>
       <div
-        class="kiwi-input--else"
+        class="kiwi-input--else-icon"
         v-if="showPassword && !showClean && !showWordLimit"
-      ></div>
+      >
+        <div class="kiwi-input--icon" @click="handleShowPassword">
+          <i class="iconfont icon-view"></i>
+        </div>
+      </div>
       <div
-        class="kiwi-input--else"
-        v-if="showClean && !showWordLimit && !showPassword"
-      ></div>
+        class="kiwi-input--else-icon"
+        v-if="showClean && !showWordLimit && !showPassword && value.length > 0"
+      >
+        <div class="kiwi-input--icon" @click="handleCloseInput">
+          <i class="iconfont icon-guanbi"></i>
+        </div>
+      </div>
       <div
         class="kiwi-input--else"
         v-if="showWordLimit && !showClean && !showPassword"
@@ -113,8 +121,8 @@ export default {
     maxlength: {
       default: 999,
     },
-    val: {},
-    value: {}
+    val: null,
+    value: null
   },
   methods: {
     // 输入框聚焦--如果输入框聚焦控制样式
@@ -131,7 +139,7 @@ export default {
     },
     // 输入事件
     handleInput(e) {
-      this.$emit('input', e)
+      this.$emit('input', e.target.value)
     },
     // 鼠标在输入框内点击左键--聚焦
     handleMousedown() {
@@ -141,6 +149,18 @@ export default {
     handleMouseleave() {
       this.noInputHover = false;
     },
+    // 显示密码
+    handleShowPassword() {
+      if (this.$refs.input.type == 'password') {
+        this.$refs.input.type = 'text'
+      } else if (this.$refs.input.type == 'text') {
+        this.$refs.input.type = 'password'
+      }
+    },
+    // 清空内容
+    handleCloseInput() {
+        this.$emit('input', '')
+    }
   },
 };
 </script>
@@ -230,6 +250,26 @@ input:-ms-input-placeholder {
   height: 100%;
   line-height: 21px;
   font-weight: 600;
+  font-size: 12px;
+}
+.kiwi-input--else-icon {
+  display: block;
+  width: 12%;
+  text-align: right;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 21px;
+  font-weight: 600;
+  font-size: 12px;
+}
+/* 其他功能按钮样式 */
+.kiwi-input--icon{
+  text-align: right;
+  line-height: 22px;
+  padding-right: 2px;
+  cursor: pointer;
+}
+.iconfont{
   font-size: 12px;
 }
 </style>

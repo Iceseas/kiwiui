@@ -12,8 +12,16 @@
     <div class="component_show_block">
       <pre>
         默认使用：
-        &#60;kiwi-radio v-model="radioVal" val="a"&#62;&#60;/kiwi-radio&#62;
-        &#60;kiwi-radio v-model="radioVal" val="b"&#62;&#60;/kiwi-radio&#62;
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="a"&#62;
+        &#60;/kiwi-radio&#62;
+
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="b"&#62;
+        &#60;/kiwi-radio&#62;
+
         export default {
           data(){
             return {
@@ -38,8 +46,18 @@
     <div class="component_show_block">
       <pre>
         禁用状态：
-        &#60;kiwi-radio v-model="radioVal" val="a" disabeld&#62;&#60;/kiwi-radio&#62;
-        &#60;kiwi-radio v-model="radioVal" val="b" disabeld&#62;&#60;/kiwi-radio&#62;
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="a" 
+          disabeld&#62;
+        &#60;/kiwi-radio&#62;
+
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="b" 
+          disabeld&#62;
+        &#60;/kiwi-radio&#62;
+
         export default {
           data(){
             return {
@@ -58,8 +76,18 @@
     <div class="component_show_block">
       <pre>
         自定选项：
-        &#60;kiwi-radio v-model="radioVal" val="a"&#62;男生&#60;/kiwi-radio&#62;
-        &#60;kiwi-radio v-model="radioVal" val="b"&#62;女生&#60;/kiwi-radio&#62;
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="a"&#62;
+        男生
+        &#60;/kiwi-radio&#62;
+
+        &#60;kiwi-radio 
+          v-model="radioVal" 
+          val="b"&#62;
+        女生
+        &#60;/kiwi-radio&#62;
+
         export default {
           data(){
             return {
@@ -90,8 +118,14 @@
       <pre>
         单选框组:
         &#60;kiwi-radio-group v-model="radioGroupValue"&#62;
-          &#60;kiwi-radio val="a"&#62;选项1&#60;/kiwi-radio&#62;
-          &#60;kiwi-radio val="b"&#62;选项2&#60;/kiwi-radio&#62;
+          &#60;kiwi-radio val="a"&#62;
+          选项1
+          &#60;/kiwi-radio&#62;
+
+          &#60;kiwi-radio val="b"&#62;
+          选项2
+          &#60;/kiwi-radio&#62;
+          
         &#60;/kiwi-radio-group&#62;
         export default {
           data(){

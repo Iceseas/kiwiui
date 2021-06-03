@@ -13,7 +13,8 @@
     <div class="component_show_block">
       <pre>
         默认穿梭框:
-        &#60;kiwi-switch v-model="isOpen"&#62; &#60;/kiwi-switch&#62;
+        &#60;kiwi-switch v-model="isOpen"&#62; 
+        &#60;/kiwi-switch&#62;
         export default {
         data(){
           return {
@@ -38,7 +39,11 @@
     <div class="component_show_block">
       <pre>
         默认穿梭框:
-        &#60;kiwi-switch left-title="关闭" right-title="开启" v-model="isOpen2"&#62; &#60;/kiwi-switch&#62;
+        &#60;kiwi-switch 
+          left-title="关闭" 
+          right-title="开启" 
+          v-model="isOpen2"&#62; 
+        &#60;/kiwi-switch&#62;
         export default {
         data(){
           return {

@@ -6,11 +6,17 @@
 
 <script>
 export default {
+  data(){
+    return{
+      baseCss: ''
+    }
+  },
   components:{
 
   }
 }
 </script>
+<style src="./styles/pc.css"></style>
 <style>
 *{
   padding: 0;

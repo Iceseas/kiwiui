@@ -9,10 +9,10 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.1.8-green">
+    <img src="https://img.shields.io/badge/npm-0.1.9-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
-    <img src="https://img.shields.io/badge/coverage-12%25-blue">
+    <img src="https://img.shields.io/badge/coverage-20%25-blue">
   </a>
   <a href="https://Iceseas.github.io">
     <img src="https://img.shields.io/badge/view-example-brightgreen">
@@ -126,4 +126,10 @@
 + `kiwi-checkbox` 调整样式
 + `kiwi-select` 调整样式
 
+### 0.1.9
+**bug修复：**
++ `kiwi-input` 无法输入的错误，现在已正常
+
+**新增：**
++ `kiwi-input` 输入组件新增属性`showPassword` 配合密码框显示密码 `showClean` 可清空输入框
 

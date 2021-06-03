@@ -15,13 +15,19 @@
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
-        默认选择框:
-        &#60;kiwi-select v-model="data" :kw-options="options" &#62; &#60;/kiwi-select&#62;
-        export default {
+      默认选择框:
+      &#60;kiwi-select v-model="data" :kw-options="options" &#62;
+      &#60;/kiwi-select&#62;
+      export default {
         data(){
           return {
             data:'',
-            options: ['北京烤鸭','京酱肉丝','番茄炒蛋','水煮牛肉','地三鲜','凉拌黄瓜']
+            options: ['北京烤鸭',
+                      '京酱肉丝',
+                      '番茄炒蛋',
+                      '水煮牛肉',
+                      '地三鲜',
+                      '凉拌黄瓜']
           }
         }
       }
@@ -39,7 +45,8 @@
     <div class="component_show_block">
       <pre>
         禁用选择框:
-        &#60;kiwi-select v-model="data" disabled &#62; &#60;/kiwi-select&#62;
+        &#60;kiwi-select v-model="data" disabled &#62; 
+        &#60;/kiwi-select&#62;
       </pre>
     </div>
     <p class="title_init title_3">Attributes</p>

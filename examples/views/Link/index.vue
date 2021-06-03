@@ -18,11 +18,25 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-link&#62;默认连接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="normal"&#62;普通链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="error"&#62;危险链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="success"&#62;成功链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="warning"&#62;警告链接&#60;/kiwi-link&#62;
+        &#60;kiwi-link&#62;
+        默认链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="normal"&#62;
+        普通链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="error"&#62;
+        危险链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="success"&#62;
+        成功链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="warning"&#62;
+        警告链接
+        &#60;/kiwi-link&#62;
       </pre>
     </div>
     <p class="title_init title_3">接收url</p>
@@ -58,11 +72,25 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-link disabled&#62;默认连接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="normal" disabled&#62;普通链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="error" disabled&#62;危险链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="success" disabled&#62;成功链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="warning" disabled&#62;警告链接&#60;/kiwi-link&#62;
+        &#60;kiwi-link disabled&#62;
+        默认连接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="normal" disabled&#62;
+        普通链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="error" disabled&#62;
+        危险链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="success" disabled&#62;
+        成功链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="warning" disabled&#62;
+        警告链接
+        &#60;/kiwi-link&#62;
       </pre>
     </div>
     <p class="title_init title_3">没有下划线</p>
@@ -81,11 +109,25 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-link noUnderline&#62;默认连接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="normal" noUnderline&#62;普通链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="error" noUnderline&#62;危险链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="success" noUnderline&#62;成功链接&#60;/kiwi-link&#62;
-        &#60;kiwi-link type="warning" noUnderline&#62;警告链接&#60;/kiwi-link&#62;
+        &#60;kiwi-link noUnderline&#62;
+        默认连接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="normal" noUnderline&#62;
+        普通链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="error" noUnderline&#62;
+        危险链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="success" noUnderline&#62;
+        成功链接
+        &#60;/kiwi-link&#62;
+
+        &#60;kiwi-link type="warning" noUnderline&#62;
+        警告链接
+        &#60;/kiwi-link&#62;
       </pre>
     </div>
     <p class="title_init title_3">Attributes</p>

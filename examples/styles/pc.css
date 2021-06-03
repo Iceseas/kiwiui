@@ -1,0 +1,174 @@
+html{
+  font-size:62.5%
+}
+/* home_contain */
+.home_body,
+.head,
+.main,
+.main_left,
+.main_right,
+.logo{
+  box-sizing: border-box;
+}
+.home_body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 10rem;
+}
+.head{
+  height: 10%;
+  border: 1px solid #DCDFE6;
+  padding: 0 4rem;
+}
+.logo{
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo > .img{
+  height: 7rem;
+  margin: 1rem;
+}
+.logo > .text,
+.logo_text{
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #9AD14B;
+}
+.main{
+  height: 90%;
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+}
+.main_mobile{
+  height: 90%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.main_left_mobile{
+  height: 20%;
+  min-width: 20rem;
+  border-right: 1px solid #DCDFE6;
+  overflow-y: auto;
+}
+.main_left{
+  width: 30rem;
+  border-right: 1px solid #DCDFE6;
+  overflow-y: auto;
+}
+.main_right{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: 5rem;
+}
+.router_view{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* main_page_init */
+.main_page_init{
+  padding: 2rem;
+  box-sizing: border-box;
+}
+/* explain css */
+.title_init{
+  font-size: 1.4rem;
+  color: 1e2022;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+/* 一级标题 */
+.title_1{
+  font-size: 4rem;
+}
+/* 二级标题 */
+.title_2{
+  font-size: 3.2rem;
+}
+/* 三级标题 */
+.title_3{
+  font-size: 2.4rem;
+}
+/* 四级标题 */
+.title_4{
+  font-size: 1.6rem;
+}
+/* 代码块 */
+.code_block{
+  height: auto;
+  width: auto;
+  min-width: 20rem;
+  background: #bfdcae;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+/* 列表样式 */
+.list_style{
+  padding-left: 3rem;
+  display: block;
+  position: relative;
+  font-size: 1.4rem;
+}
+.list_style::before{
+  position: absolute;
+  content: '';
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .5rem;
+  height: .5rem;
+  background: #303952;
+  border-radius: 100%;
+}
+/* 展示块 */
+.component_show_block{
+  margin-top: 1rem;
+  border-radius: .6rem;
+  border: 1px solid #EBEEF5;
+  height: auto ;
+  padding: 0 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.component_show_block:hover{
+  box-shadow: 0 .2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
+  transition: 0.1s;
+}
+/* 标亮块 */
+.highlight_code{
+  display: inline-block;
+  padding: .4rem;
+  border-radius: .4rem;
+  margin: .5rem .3rem;
+  background: #bfdcae;
+  color: #fff;
+  font-weight: 600;
+}
+/* 展示组件属性的table样式 */
+.attributes_table{
+  width: 89%;
+  font-size: 1.4rem;
+}
+.attributes_table tr{
+  width: 100%;
+  padding: 1rem .5rem;
+  border-bottom: 1px solid #EBEEF5;
+  display: flex;
+}
+.attributes_table td{
+  flex: 1;
+  text-align: center;
+}

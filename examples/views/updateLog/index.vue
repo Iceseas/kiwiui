@@ -19,8 +19,7 @@
         增加没有选项的处理
       </p>
       <p class="list_style">
-        借用<span class="highlight_code">element</span>的<span class="highlight_code">clickoutside</span>自定义指令
-        <span class="highlight_code">kiwi-select</span>新增点击组件外侧事件(学习中。。先拿来使用)
+        <span class="highlight_code">kiwi-select</span>新增点击组件外侧命令
       </p>
     </div>
     <div class="component_show_block">
@@ -115,12 +114,38 @@
       <p class="list_style">
         <span class="highlight_code">kiwi-switch</span>开关组件
       </p>
+      <p class="list_style">
+      <span class="highlight_code">kiwi-input-num</span>计数器组件,目前只支持整数，后续会更新浮点数
+      </p>
       <p class="title_init title_3">优化：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-input</span>
+        增加input事件监听
+      </p>
+      <p class="title_init title_4">加入iconfont优化一些组件的样式</p>
       <p class="list_style">
         <span class="highlight_code">kiwi-checkbox</span>
         调整样式
       </p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-select</span>
+        调整样式
+      </p>
     </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.1.9</p>
+      <p class="title_init title_3">bug修复：</p>
+      <p class="list_style">
+        修复<span class="highlight_code">kiwi-input</span>输入事件的错误，现在已经可以正常输入
+      </p>
+      <p class="title_init title_3">新增：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-input</span>组件中增加属性：
+        <span class="highlight_code">showPassword</span>配合密码框显示密码
+        <span class="highlight_code">showClean</span>可清空
+      </p>
+    </div>
+    
   </div>
 </template>
 

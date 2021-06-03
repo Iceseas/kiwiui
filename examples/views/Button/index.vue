@@ -36,25 +36,72 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-button type="default"&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error"&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success"&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning"&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default"&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error"&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success"&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning"&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         朴素按钮
-        &#60;kiwi-button type="default" plain&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" plain&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" plain&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" plain&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" plain&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" plain&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" plain&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" plain&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         默认圆角按钮
-        &#60;kiwi-button type="default" round&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" round&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" round&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" round&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" round&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" round&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" round&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" round&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         朴素圆角按钮
-        &#60;kiwi-button type="default" plain round&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" plain round&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" plain round&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" plain round&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" plain round&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" plain round&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" plain round&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" plain round&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
       </pre>
     </div>
     <p class="title_init title_3">禁用状态</p>
@@ -90,25 +137,72 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-button type="default" disabled&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" disabled&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" disabled&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" disabled&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" disabled&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" disabled&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" disabled&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" disabled&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         朴素按钮
-        &#60;kiwi-button type="default" plain disabled&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" plain disabled&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" plain disabled&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" plain disabled&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" plain disabled&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" plain disabled&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" plain disabled&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" plain disabled&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         默认圆角按钮
-        &#60;kiwi-button type="default" round disabled&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" round disabled&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" round disabled&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" round disabled&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" round disabled&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" round disabled&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" round disabled&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" round disabled&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
+
         朴素圆角按钮
-        &#60;kiwi-button type="default" plain round disabled&#62;普通按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" plain round disabled&#62;危险按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" plain round disabled&#62;成功按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="warning" plain round disabled&#62;警告按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default" plain round disabled&#62;
+        普通按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" plain round disabled&#62;
+        危险按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" plain round disabled&#62;
+        成功按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="warning" plain round disabled&#62;
+        警告按钮
+        &#60;/kiwi-button&#62;
       </pre>
     </div>
     <p class="title_init title_3">尺寸</p>
@@ -125,9 +219,18 @@
     <div class="component_show_block">
       <pre>
         默认按钮:
-        &#60;kiwi-button type="default"&#62;默认大小&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="error" size="small"&#62;小按钮&#60;/kiwi-button&#62;
-        &#60;kiwi-button type="success" size="huge"&#62;大按钮&#60;/kiwi-button&#62;
+        &#60;kiwi-button type="default"&#62;
+        默认大小
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="error" size="small"&#62;
+        小按钮
+        &#60;/kiwi-button&#62;
+
+        &#60;kiwi-button type="success" size="huge"&#62;
+        大按钮
+        &#60;/kiwi-button&#62;
+        
       </pre>
     </div>
     <p class="title_init title_3">Attributes</p>
