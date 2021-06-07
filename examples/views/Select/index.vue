@@ -39,13 +39,13 @@
       禁用选择框
     </p>
     <div class="component_show_block">
-      <kiwi-select v-model="data" disabled></kiwi-select>
+      <kiwi-select v-model="data1" disabled></kiwi-select>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
       <pre>
         禁用选择框:
-        &#60;kiwi-select v-model="data" disabled &#62; 
+        &#60;kiwi-select v-model="data1" disabled &#62; 
         &#60;/kiwi-select&#62;
       </pre>
     </div>
@@ -105,6 +105,7 @@ export default {
   data(){
     return {
       data: '',
+      data1: '',
       options: ['北京烤鸭','京酱肉丝','番茄炒蛋','水煮牛肉','地三鲜','凉拌黄瓜'],
       attributes_type:['参数','说明','类型','可选值','默认值'],
       attributes_content:[

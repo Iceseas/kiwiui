@@ -7,6 +7,8 @@ import kiwiRadioGroup from './RadioGroup'
 import kiwiCheckbox from './Checkbox'
 import kiwiCheckboxGroup from './CheckboxGroup'
 import kiwiSwitch from './Switch'
+import kiwiInputNum from './InputNum'
+import kiwiIcon from './Icon'
 
 
 // 组件列表
@@ -19,7 +21,9 @@ const components = [
   kiwiRadioGroup,
   kiwiCheckbox,
   kiwiCheckboxGroup,
-  kiwiSwitch
+  kiwiSwitch,
+  kiwiInputNum,
+  kiwiIcon
 ]
 
 
@@ -48,5 +52,7 @@ export default {
   kiwiRadioGroup,
   kiwiCheckbox,
   kiwiCheckboxGroup,
-  kiwiSwitch
+  kiwiSwitch,
+  kiwiInputNum,
+  kiwiIcon
 }

@@ -5,6 +5,8 @@ kiwiui/
 packages/
 Iceseas.github.io/
 dist/
+examples/
+lib/
  
 # 忽略指定文件
 vue.config.js

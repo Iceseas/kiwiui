@@ -142,6 +142,8 @@ export default {
 </script>
 
 <style scoped>
+@import '../../../examples/assets/iconfont/iconfont.css';
+
 .kiwi-select--init{
   position: relative;
   cursor: pointer;

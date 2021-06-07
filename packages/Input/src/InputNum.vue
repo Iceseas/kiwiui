@@ -109,6 +109,7 @@ export default {
 </script>
 
 <style scoped>
+@import '../../../examples/assets/iconfont/iconfont.css';
 .kiwi-input-num--box-flex{
   display: flex;
 }

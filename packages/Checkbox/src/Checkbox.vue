@@ -118,6 +118,8 @@ export default {
 </script>
 
 <style scoped>
+@import '../../../examples/assets/iconfont/iconfont.css';
+
 .kiwi-checkbox-block{
   display: inline-block;
   cursor: pointer;

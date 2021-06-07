@@ -15,6 +15,7 @@
     ]"
   >
     <slot></slot>
+    <template v-if="!$slots.default">按钮</template>
   </button>
 </template>
 

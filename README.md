@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.1.9-green">
+    <img src="https://img.shields.io/badge/npm-0.2.0-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-20%25-blue">
@@ -50,6 +50,7 @@
 
 
 ## Elements
++ `kiwi-icon` icon 字体图标
 + `kiwi-button` Button 按钮组件
 + `kiwi-link` link 链接组件
 + `kiwi-input` input 输入框组件
@@ -133,3 +134,8 @@
 **新增：**
 + `kiwi-input` 输入组件新增属性`showPassword` 配合密码框显示密码 `showClean` 可清空输入框
 
+### 0.2.0
+**bug修复：**
++ `kiwi-select` `kiwi-input-num` `kiwi-checkbox` icon无法显示的问题，已解决
+**新增：**
++ `kiwi-icon` 图标，封装了一下一些常用的iconfont图标

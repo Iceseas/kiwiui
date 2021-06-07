@@ -145,6 +145,20 @@
         <span class="highlight_code">showClean</span>可清空
       </p>
     </div>
+    <div class="component_show_block">
+      <p class="title_init title_2">0.2.0</p>
+      <p class="title_init title_3">bug修复：</p>
+      <p class="list_style">
+        修复<span class="highlight_code">kiwi-select</span>
+        <span class="highlight_code">kiwi-input-num</span>
+        <span class="highlight_code">kiwi-checkbox</span>icon不显示，已修复
+      </p>
+      <p class="title_init title_3">新增：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-icon</span>封装了一些常用的
+        <span class="highlight_code">iconfont</span>简便使用
+      </p>
+    </div>
     
   </div>
 </template>

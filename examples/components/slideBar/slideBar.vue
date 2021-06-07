@@ -19,6 +19,14 @@
     <router-link 
       :class="[
         isMobile?'slideItem_mobile':'slideItem' ,, 
+        activePath=='Icon'?' slideItemActive':''
+      ]" 
+      to="/index/Icon" >
+      Icon 图标
+    </router-link>
+    <router-link 
+      :class="[
+        isMobile?'slideItem_mobile':'slideItem' ,, 
         activePath=='Button'?' slideItemActive':''
       ]" 
       to="/index/Button" >
@@ -65,7 +73,7 @@
       Checkbox 多选框
     </router-link>
     <!-- <router-link :class="['slideItem' , activePath=='Transfer'?' slideItemActive':'']" to="/index/Transfer" >
-      <span>Transfer 穿梭框
+      <span>Transfer 穿梭框</span>
     </router-link> -->
     <router-link 
       :class="[
@@ -83,6 +91,7 @@
       to="/index/Switch" >
       Switch 开关
     </router-link>
+    
   </div>
 </template>
 

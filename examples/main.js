@@ -5,8 +5,6 @@ import store from './store'
 import kiwiui from '../packages'
 
 Vue.use(kiwiui)
-// iconfont
-import './assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 

@@ -22,7 +22,7 @@ module.exports = {
     config.module
       .rule('js')
       .include
-      .add('/packages/')
+      .add('/packages/', '/examples/assets/')
       .end()
       .use('babel')
       .loader('babel-loader')
