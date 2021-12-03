@@ -159,7 +159,18 @@
         <span class="highlight_code">iconfont</span>简便使用
       </p>
     </div>
-    
+    <div class="component_show_block">
+      <p class="title_init title_2">0.2.1</p>
+      <p class="title_init title_3">bug修复：</p>
+      <p class="list_style">
+        修复<span class="highlight_code">kiwi-link</span>
+        a标签下划线样式依然存在的bug
+      </p>
+      <p class="title_init title_3">新增：</p>
+      <p class="list_style">
+        <span class="highlight_code">kiwi-tabs</span>标签页，支持icon标签显示
+      </p>
+    </div>
   </div>
 </template>
 

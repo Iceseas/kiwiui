@@ -26,7 +26,7 @@
     </div>
     <p class="title_init title_2">图标集合</p>
     <div class="icon-show-block">
-      <div class="icon-card" v-for="item in iconlist" :key="item" @click="handleCopyIconName(item)">
+      <div class="icon-card" v-for="item in iconlist" :key="item">
         <div style="text-align:center;font-size:14px;font-weight:600">
           <kiwi-icon :name="item" />
           <p class="icon-name">{{ item }}</p>
@@ -101,9 +101,6 @@ export default {
     };
   },
   methods:{
-    handleCopyIconName(name){
-      console.log(name)
-    }
   }
 };
 </script>

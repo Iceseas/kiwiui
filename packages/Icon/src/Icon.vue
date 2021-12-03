@@ -59,7 +59,7 @@ export default {
         {name: 'kiwi-icon-message3',iconClass: 'icon-xinxi1'},
         {name: 'kiwi-icon-menu2',iconClass: 'icon-gengduo2'},
         {name: 'kiwi-icon-scan2',iconClass: 'icon-fangdajing'},
-        {name: 'kiwi-icon-signin2',iconClass: 'icon-fangdajing'},
+        {name: 'kiwi-icon-signin2',iconClass: 'icon-qiandaochenggong1'},
       ],
       iconName: ''
     }
@@ -81,6 +81,6 @@ export default {
 @import '../../../examples/assets/iconfont/iconfont.css';
 
 .iconfont-init{
-  font-size: 20px;
+  font-size: 14px;
 }
 </style>

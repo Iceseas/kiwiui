@@ -6,24 +6,24 @@
 
 <script>
 export default {
-  name:'kiwi-radio-group',
-  props:{
+  name: "kiwi-radio-group",
+  props: {
     value: {},
-    disabeld:{
-      type:Boolean,
+    disabeld: {
+      type: Boolean,
       default: false
-    },
+    }
   },
   watch: {
     value(newValue) {
-    this.$emit("groupChange", newValue);
+      this.$emit("groupChange", newValue);
+    }
   }
-  }
-}
+};
 </script>
 
 <style scoped>
-.kiwi-radio-group{
+.kiwi-radio-group {
   display: inline-block;
 }
 </style>

@@ -65,6 +65,7 @@ export default {
   padding-bottom: 1px;
   box-sizing: border-box;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
 }
 .link_init:hover{
   border-bottom: 1px solid #409EFF;

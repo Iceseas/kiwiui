@@ -1,71 +1,101 @@
 <template>
-  <label 
+  <label
     id="kiwi-select--id"
     v-clickoutside="handleCloseOpions"
     :class="[
       'kiwi-select--init',
-      focusBorder?'kiwi-select--box_nohver': disabled? 'kiwi-select--box_nohver' :'kiwi-select--box',
+      focusBorder
+        ? 'kiwi-select--box_nohver'
+        : disabled
+        ? 'kiwi-select--box_nohver'
+        : 'kiwi-select--box',
       {
-        'is-focus-border': disabled? false : focusBorder,
-        'is-blur-border': disabled? false : blurBorder,
-        'is-disabled' : disabled
+        'is-focus-border': disabled ? false : focusBorder,
+        'is-blur-border': disabled ? false : blurBorder,
+        'is-disabled': disabled,
       },
     ]"
-    @click="disabled?'':handleSelectFocus($event)"
+    @click="disabled ? '' : handleSelectFocus($event)"
   >
     <div class="kiwi-select-inlinebox">
       <div class="dell_select_flex">
-      <input 
-        ref="input"
-        type="text" 
-        :disabled="false"
-        :autofocus="false"
-        :name="name"
-        :readonly="filterable ? false : true"
-        v-model="model"
-        class="input_init"
-        placeholder="请选择"
-        @focus="disabled? '' : handleInputFocus($event)"
-        @blur="disabled? '' : handleInputBlur($event)"
-      />
+        <input
+          ref="input"
+          type="text"
+          :disabled="false"
+          :autofocus="false"
+          :name="name"
+          :readonly="filterable ? false : true"
+          v-model="model"
+          class="input_init"
+          placeholder="请选择"
+          @focus="disabled ? '' : handleInputFocus($event)"
+          @blur="disabled ? '' : handleInputBlur($event)"
+        />
       </div>
-      <i 
+      <i
         :class="[
-          'iconfont' + '', 
+          'iconfont' + '',
           'icon-arrow-down' + '',
           'rotate-icon' + '',
           {
-            'rotate-down' : showOptions
-          }
-        ]"></i>
-        <div class="kiwi-select--else" v-if="showClean"></div>
+            'rotate-down': showOptions,
+          },
+        ]"
+      ></i>
+      <div class="kiwi-select--else" v-if="showClean"></div>
     </div>
     <!-- 下拉框显示 -->
-    <div :class="[
-    'kiwi-select--options',
-    showOptions? 'show-options' : 'close-options'
-    ]">
+    <div
+      v-if="kwOptions && kwOptions.length > 0"
+      :class="[
+        'kiwi-select--options',
+        showOptions ? 'show-options' : 'close-options',
+      ]"
+    >
       <div class="kiwi-select--content">
-        <template v-if="kwOptions && kwOptions.length > 0">
-          <div v-for="item in kwOptions" :key="item" class="kiwi-select--item" @click.stop="disabled? '':handleClickItem($event)">{{ item }}</div>
-        </template>
-        <div v-else class="kiwi-select--item">无内容</div>
+        <div
+          v-for="item in kwOptions"
+          :key="item"
+          class="kiwi-select--item"
+          @click.stop="disabled ? '' : handleClickItem($event)"
+        >
+          {{ item }}
+        </div>
+      </div>
+    </div>
+    <div
+     v-else-if="!kwOptions || kwOptions.length == 0"
+      :class="[
+        'kiwi-select--options',
+        showOptions
+          ? 'show-none-options'
+          : 'close-none-options',
+      ]"
+    >
+      <div class="kiwi-select--content">
+        <div
+          class="kiwi-select--item"
+          @click.stop="disabled ? '' : handleClickItem('none')"
+        >
+          无内容
+        </div>
       </div>
     </div>
   </label>
 </template>
 
 <script>
-import clickoutside from '../../../utils/clickoutside';
+import clickoutside from "../../../utils/clickoutside";
 export default {
   name: "kiwi-select",
   directives: { clickoutside },
-  data(){
-    return{
+  data() {
+    return {
       focusBorder: false,
       blurBorder: false,
       showOptions: false,
-    }
+    };
   },
   computed: {
     model: {
@@ -77,34 +107,34 @@ export default {
       },
     },
   },
-  props:{
-    showClean:{
-      type:Boolean,
-      default: false
+  props: {
+    showClean: {
+      type: Boolean,
+      default: false,
     },
     filterable: {
       type: Boolean,
-      default: false
+      default: false,
     },
     disabled: {
       type: Boolean,
-      default: false
+      default: false,
     },
     kwOptions: Array,
     val: {},
     value: {},
-    name: String
+    name: String,
   },
-  methods:{
+  methods: {
     // 输入框聚焦--如果输入框聚焦控制样式
-    handleInputFocus(e){
+    handleInputFocus(e) {
       this.focusBorder = true;
       this.blurBorder = false;
       this.$emit("inputFocus", e);
     },
     // 输入框失焦
-    handleInputBlur(e){
-      if(this.filterable == true) {
+    handleInputBlur(e) {
+      if (this.filterable == true) {
         this.handleCloseOpions();
         this.focusBorder = false;
         this.blurBorder = true;
@@ -112,46 +142,51 @@ export default {
       }
     },
     // 关闭下拉框
-    handleCloseOpions(){
+    handleCloseOpions() {
       this.showOptions = false;
       this.focusBorder = false;
       this.blurBorder = true;
     },
     // 点击选择框聚焦
-    handleSelectFocus(e){
+    handleSelectFocus(e) {
       // 处理点击选择框展开再点开选择框关闭
       if (this.showOptions == false) {
         this.showOptions = true;
       } else {
         this.showOptions = false;
       }
-      if(this.filterable == true) {
+      if (this.filterable == true) {
         this.$refs.input.focus();
         this.handleInputFocus();
       }
-      this.$emit('focus', e)
+      this.$emit("focus", e);
     },
-    handleClickItem(e){
-      e.path[1].scrollTop = 0;
-      e.stopPropagation();
-      this.$emit("input", e.target.outerText);
-      this.$emit('change', e.target.outerText);
-    }
-  }
-}
+    handleClickItem(e) {
+      if (e === "none") {
+        this.$emit("input", "");
+        this.$emit("change", "");
+      } else {
+        e.path[1].scrollTop = 0;
+        e.stopPropagation();
+        this.$emit("input", e.target.outerText);
+        this.$emit("change", e.target.outerText);
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
-@import '../../../examples/assets/iconfont/iconfont.css';
+@import "../../../examples/assets/iconfont/iconfont.css";
 
-.kiwi-select--init{
+.kiwi-select--init {
   position: relative;
   cursor: pointer;
   background: #fff;
   z-index: 999;
 }
 /* 下拉框样式 */
-.kiwi-select--options{
+.kiwi-select--options {
   position: absolute;
   left: 0;
   top: 40px;
@@ -165,16 +200,16 @@ export default {
   border-radius: 4px;
   overflow: hidden;
 }
-.kiwi-select--content{
+.kiwi-select--content {
   width: 110%;
   box-sizing: border-box;
   max-height: 190px;
   position: relative;
   overflow: auto;
 }
-.kiwi-select--content::after{
+.kiwi-select--content::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 20%;
   top: -7px;
   background: transparent;
@@ -184,34 +219,42 @@ export default {
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
 }
-.show-options{
+.show-options {
   opacity: 1;
-  height: auto;
-  max-height: 200px;
+  height: 200px;
   transition: 0.4s;
 }
-.close-options{
-  opacity: 0;
+.close-options {
+  height: 0px;
+  transition: 0.4s;
+  padding: 0;
+}
+.show-none-options {
+  opacity: 1;
+  height: 45px;
+  transition: 0.4s;
+}
+.close-none-options {
   height: 0px;
   transition: 0.4s;
   padding: 0;
 }
 /* 各选项的样式 */
-.kiwi-select--item{
+.kiwi-select--item {
   text-align: center;
   line-height: 35px;
   width: 190px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   color: #606266;
 }
-.kiwi-select--item:hover{
+.kiwi-select--item:hover {
   transition: 0.2s;
-  background: #F2F6FC;
+  background: #f2f6fc;
 }
 /* 基本样式 */
 .kiwi-select--box_nohver,
-.kiwi-select--box{
+.kiwi-select--box {
   width: 190px;
   height: 35px;
   display: inline-block;
@@ -219,11 +262,11 @@ export default {
   box-sizing: border-box;
   font-size: 12px;
   border-radius: 4px;
-  border:1px solid #e4e7ed;
+  border: 1px solid #e4e7ed;
   position: relative;
 }
 /* 内flex盒子 */
-.kiwi-select-inlinebox{
+.kiwi-select-inlinebox {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -231,7 +274,7 @@ export default {
   display: flex;
 }
 /* 禁用样式 */
-.is-disabled::after{
+.is-disabled::after {
   position: absolute;
   content: "";
   left: 0px;
@@ -243,27 +286,27 @@ export default {
   opacity: 0.5;
 }
 /* hover样式 */
-.kiwi-select--box:hover{
-  border:1px solid #909399;
+.kiwi-select--box:hover {
+  border: 1px solid #909399;
   transition: 1s;
 }
 /* focus样式 */
 .kiwi-select--box_nohver.is-focus-border,
-.kiwi-select--box.is-focus-border{
-  border: 1px solid #409EFF;
+.kiwi-select--box.is-focus-border {
+  border: 1px solid #409eff;
   transition: 0.5s;
 }
 /* blur样式 */
 .kiwi-select--box_nohver.is-blur-border,
-.kiwi-select--box.is-blur-border{
+.kiwi-select--box.is-blur-border {
   border: 1px solid #e4e7ed;
   transition: 0.5s;
 }
 /* 取消input的样式 */
-.input_init{
+.input_init {
   height: 100%;
   width: 100%;
-  border:none;
+  border: none;
   outline: none;
   background: none;
   cursor: pointer;
@@ -272,12 +315,12 @@ export default {
   z-index: -2;
 }
 /* 处理input flex 1失效问题 */
-.dell_select_flex{
+.dell_select_flex {
   flex: 1;
   line-height: 18px;
 }
 /* 其他功能 */
-.kiwi-select--else{
+.kiwi-select--else {
   display: block;
   width: 27%;
   text-align: right;
@@ -287,7 +330,7 @@ export default {
   font-weight: 600;
   font-size: 12px;
 }
-.rotate-icon{
+.rotate-icon {
   font-size: 12px;
   position: absolute;
   right: 10px;
@@ -297,7 +340,7 @@ export default {
   height: 100%;
   line-height: 35px;
 }
-.rotate-down{
+.rotate-down {
   transform: rotate(0deg);
   transition: 0.5s;
 }

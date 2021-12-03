@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uikiwi">
-    <img src="https://img.shields.io/badge/npm-0.2.0-green">
+    <img src="https://img.shields.io/badge/npm-0.2.1-green">
   </a>
   <a href="https://github.com/Iceseas/kiwiui">
     <img src="https://img.shields.io/badge/coverage-20%25-blue">
@@ -137,5 +137,13 @@
 ### 0.2.0
 **bug修复：**
 + `kiwi-select` `kiwi-input-num` `kiwi-checkbox` icon无法显示的问题，已解决
+
 **新增：**
 + `kiwi-icon` 图标，封装了一下一些常用的iconfont图标
+
+### 0.2.1
+**bug修复：**
++ `kiwi-link` a标签下划线样式依然存在的bug
+
+**新增：**
++ `kiwi-tabs` 标签页，支持icon标签显示

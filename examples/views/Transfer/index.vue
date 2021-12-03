@@ -10,6 +10,8 @@
     </p>
     <div class="component_show_block">
       <kiwi-transfer v-model="dataArr" :list="list"></kiwi-transfer>
+      <kiwi-button @click="handleShow">show</kiwi-button>
+      <kiwi-button @click="handleChange">change</kiwi-button>
     </div>
     <p class="title_init">查看代码</p>
     <div class="component_show_block">
@@ -102,6 +104,17 @@ export default {
     }
   },
   methods:{
+    handleShow(){
+      console.log(this.dataArr)
+    },
+    handleChange(){
+      this.dataArr.push({
+        disabled: false,
+        key: 1,
+        label: "选项1",
+        value: "one"
+      })
+    }
   }
 }
 </script>

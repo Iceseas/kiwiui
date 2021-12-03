@@ -108,6 +108,14 @@ Vue.use(VueRouter)
           component: ()=> import ('../views/Icon/index')
         },
         {
+          path: '/index/Tabs',
+          name: 'Tabs',
+          meta:{
+            name: 'Tabs'
+          },
+          component: ()=> import ('../views/Tabs/index')
+        },
+        {
           path:'/index/updateLog',
           name: 'updateLog',
           meta:{

@@ -91,7 +91,14 @@
       to="/index/Switch" >
       Switch 开关
     </router-link>
-    
+    <router-link 
+      :class="[
+        isMobile?'slideItem_mobile':'slideItem' ,, 
+        activePath=='Tabs'?' slideItemActive':''
+      ]" 
+      to="/index/Tabs" >
+      Tabs 标签页
+    </router-link>
   </div>
 </template>
 

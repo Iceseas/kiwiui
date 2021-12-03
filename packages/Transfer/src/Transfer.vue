@@ -61,14 +61,7 @@ export default {
       this.$emit('input', newval)
     },
     value: function(newval){
-      // 检测外部数据变化时内部跟着变化
-      for (let i = 0; i < newval.length; i++) {
-        console.log(this.leftCheckedList.includes(newval[i]))
-        if (this.leftCheckedList.includes(newval[i]) && !this.rightCheckedList.includes(newval[i])) {
-          this.rightCheckedList.push(newval[i]);
-          this.leftCheckedList.splice(this.leftCheckedList.indexOf(newval[i]), 1);
-        }
-      }
+      this.updateArr(newval);
     }
   },
   mounted(){
@@ -78,6 +71,17 @@ export default {
     })
   },
   methods:{
+    // 渲染右侧数组
+    updateArr(newArr) {
+      // 检测外部数据变化时内部跟着变化
+      this.rightCheckedList = [];
+      for (let i = 0; i < newArr.length; i++) {
+        if (this.list.includes(newArr[i])) {
+          this.rightCheckedList.push(newArr[i]);
+        }
+      }
+    },
+    // 处理选择的数组
     pushArr() {
       for(let i = 0; i < this.leftCheckedList.length; i++) {
         for(let j = 0; j < this.checkboxGroupLeft.length; j++) {
@@ -95,6 +99,7 @@ export default {
         this.checkboxGroupLeft = [];
       })
     },
+    // 返回处理数组
     backArr(){
       for(let i = 0; i < this.rightCheckedList.length; i++) {
         for(let j = 0; j < this.checkboxGroupRight.length; j++) {
