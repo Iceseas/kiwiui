@@ -29,7 +29,7 @@
 
 ## Example page
 [example page/api page](https://Iceseas.github.io)
-  
+
 ## Target
   + 能够扩充丰富的组件和功能
   + 使用起来自由灵活
@@ -59,6 +59,7 @@
 + `kiwi-checkbox` checkbox 多选框组件
 + `kiwi-switch` switch 开关组件
 + `kiwi-input-num` inputNum 计数器组件
++ `kiwi-tabs` tab 标签页
 
 ## 更新日志
 ### 0.0.9
@@ -86,6 +87,7 @@
 **修复bug：**
 + `kiwi-select` 调整样式 修复选项少的情况下下拉框的高度
   
+
 **优化：**
 + `kiwi-radio` 调整样式
 
@@ -93,6 +95,7 @@
 **新增：**
 + `kiwi-radio-group` 单选框组
   
+
 **优化：**
 + `kiwi-radio` 调整样式
 
@@ -109,6 +112,7 @@
 + `kiwi-checkbox` 多选框
 + `kiwi-checkbox-group` 多选框组
   
+
 **优化：**
 + `kiwi-radio` 调整样式
 
