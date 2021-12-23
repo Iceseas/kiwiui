@@ -1,5 +1,5 @@
 <template>
-  <i :class="'iconfont-init iconfont ' + iconName"></i>
+  <i @click="handleClick" :class="'iconfont-init iconfont ' + iconName"></i>
 </template>
 
 <script>
@@ -72,6 +72,11 @@ export default {
         if (this.iconList[i].name == this.name) 
         this.iconName = this.iconList[i].iconClass
       }
+  },
+  methods:{
+    handleClick(val) {
+      this.$emit('click', val);
+    }
   }
 }
 </script>

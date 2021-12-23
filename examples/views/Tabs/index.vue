@@ -72,6 +72,40 @@
       }
       </pre>
     </div>
+    <p class="title_init title_3">可关闭</p>
+    <p class="title_init">使用
+      <span class="highlight_code">closeAble</span>
+      定义tab可关闭
+    </p>
+    <div class="component_show_block">
+      <kiwi-tabs v-model="activeTab3" closeAble>
+        <kiwi-tab-panel label="标签1" val="1" iconName="kiwi-icon-company">1</kiwi-tab-panel>
+        <kiwi-tab-panel label="标签2" val="2" iconName="kiwi-icon-camera">2</kiwi-tab-panel>
+        <kiwi-tab-panel label="" val="3" iconName="kiwi-icon-coupon">3</kiwi-tab-panel>
+        <kiwi-tab-panel label="" val="4" iconName="kiwi-icon-phone">4</kiwi-tab-panel>
+        <kiwi-tab-panel label="标签5" val="5" iconName="kiwi-icon-scan">5</kiwi-tab-panel>
+      </kiwi-tabs>
+    </div>
+    <p class="title_init">查看代码</p>
+    <div class="component_show_block">
+      <pre>
+        默认tab组件:
+        &#60;kiwi-tabs v-model="activeTab" closeAble&#62;
+          &#60;kiwi-tab-panel label="标签1" val="1" iconName="kiwi-icon-company"&#62;1&#60;/kiwi-tab-panel&#62;
+          &#60;kiwi-tab-panel label="标签2" val="2" iconName="kiwi-icon-camera"&#62;2&#60;/kiwi-tab-panel&#62;
+          &#60;kiwi-tab-panel label="" val="3" iconName="kiwi-icon-coupon"&#62;3&#60;/kiwi-tab-panel&#62;
+          &#60;kiwi-tab-panel label="" val="4" iconName="kiwi-icon-phone"&#62;4&#60;/kiwi-tab-panel&#62;
+          &#60;kiwi-tab-panel label="标签5" val="5" iconName="kiwi-icon-scan"&#62;5&#60;/kiwi-tab-panel&#62;
+        &#60;/kiwi-tabs&#62;
+        export default {
+        data(){
+          return {
+            activeTab: '2'
+          }
+        }
+      }
+      </pre>
+    </div>
     <p class="title_init title_3">Attributes</p>
     <table class="attributes_table">
       <thead>
@@ -135,6 +169,7 @@ export default {
     return {
       activeTab: '2',
       activeTab2: '2',
+      activeTab3: '2',
       attributes_type:['参数','说明','类型','可选值','默认值'],
       attributes_content:[
         {

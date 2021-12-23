@@ -13,6 +13,12 @@
           :name="item.iconName"
           :class="value === item.value ? 'iconActiveClass' : ''"></kiwi-icon>
         {{ item.label }}
+        <kiwi-icon 
+          v-if="closeAble" 
+          name="kiwi-icon-plus" 
+          @click="handleClose(index)"
+          class="kiwi-tabs--li-close"
+          :data-index="index"></kiwi-icon>
       </li>
       <!-- <div class="tab_bar"></div> -->
     </ul>
@@ -28,7 +34,11 @@ export default {
     kiwiIcon
   },
   props:{
-    value: {}
+    value: {},
+    closeAble: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
@@ -55,6 +65,9 @@ export default {
       this.$emit('tabClick', item)
       // 传递给子组件数据
       this.activeChild = item.value;
+    },
+    handleClose(index) {
+      this.labelArr.splice(index, 1);
     }
   }
 }
@@ -73,6 +86,7 @@ export default {
   padding: 0;
 }
 .kiwi-tabs--li{
+  position: relative;
   display: inline-block;
   padding: 0 20px;
   height: 40px;
@@ -83,6 +97,13 @@ export default {
   font-size: 14px;
   font-weight: 500;
   border-bottom: 1px solid #ebebeb;
+}
+.kiwi-tabs--li-close{
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  font-size: 12px;
+  z-index: 1000;
 }
 .tab_bar{
   position: absolute;
